@@ -1,0 +1,13 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+  {% for block in blocks %}
+
+    {% set blockType = block.type %}
+
+    {% include "partials/" + blockType + ".njk" %}
+
+  {% endfor %}
+
+{% endblock %}
