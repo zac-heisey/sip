@@ -1,0 +1,150 @@
+/*== Variables ==*/
+
+/* Import fonts */
+
+@font-face {
+
+  font-family: 'Nunito Sans';
+  font-weight: 200;
+  font-style: normal;
+  src: local('Nunito Sans Extra Light'), url('/assets/css/fonts/NunitoSans-ExtraLight.ttf') format('truetype');
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Nunito Sans Regular'), url('/assets/css/fonts/NunitoSans-Regular.ttf') format('truetype');
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Nunito Sans Extra Bold'), url('/assets/css/fonts/NunitoSans-Bold.ttf') format('truetype');
+  font-display: swap;
+
+}
+
+:root {
+
+  /* Fonts */
+  --system-font: Arial, sans-serif;
+  --nunito-sans: 'Nunito Sans', Arial, sans-serif;
+
+  /* Colors */
+  --blue: #3fabe2;
+  --yellow: #fedf34;
+  --dark-gray: #222222;
+  --light-gray: #b8c0c5;
+  --white: #fff;
+
+  /* Breakpoints (for reference only - CSS variables can't be used in media queries) */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+
+}
+
+/*== Global Styles ==*/
+
+/* Resets */
+
+/* Universal box sizing > includes padding and border,
+but NOT margin, in total box size */
+
+*, *:before, *:after {
+
+  box-sizing: border-box;
+
+}
+
+/* Removes margin & padding from all browsers */
+
+html, body, div, ul, li,
+h1, h2, h3, h4, h5, h6 {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Removes underline from all link states */
+
+a:link, a:visited, a:hover, a:active {
+
+  text-decoration: none;
+
+}
+
+/* Make images easier to work with */
+img {
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+/* Screen readers only */
+
+.sr-only, .sr-only-focusable {
+
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+
+}
+
+.sr-only-focusable:focus {
+
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  clip: initial;
+  border: initial;
+
+}
+
+/*== Common Styles ==*/
+
+/* Set default scroll behavior */
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+/* Initially load system font while custom fonts load */
+
+body {
+
+  color: var(--dark-gray);
+  font-family: var(--system-font);
+
+}
+
+/* Replace system font with custom fonts once loaded */
+
+.fonts-loaded body {
+
+  font-family: var(--nunito-sans);
+
+}
