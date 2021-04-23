@@ -40,3 +40,9 @@ fields:
       issues.
   label: Image
   description: Add an image for your hero block
+- name: buttons
+  type: include
+  config: {}
+  template: buttons
+  label: Buttons
+  description: Buttons for your hero block.
