@@ -9,6 +9,12 @@ fields:
     type: field_group
     config: {}
     fields:
+    - name: buttonText
+      type: text
+      config:
+        required: false
+      label: Button Text
+      description: Text for your button.
     - name: color
       type: select
       default: white
@@ -25,12 +31,6 @@ fields:
           path: 
       label: Color
       description: Select the background color of your button.
-    - name: buttonText
-      type: text
-      config:
-        required: false
-      label: Button Text
-      description: Text for your button.
     - name: url
       type: text
       config:
