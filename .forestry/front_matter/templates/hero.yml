@@ -1,4 +1,42 @@
 ---
 label: Hero
 hide_body: true
-fields: []
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
+  default: hero
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+  description: Main heading of your hero block
+- name: subHeading
+  type: text
+  config:
+    required: false
+  label: Subheading
+  description: Subheading for your hero block
+- name: image
+  type: field_group
+  config: {}
+  fields:
+  - name: source
+    type: file
+    config:
+      maxSize: 64
+    label: Source
+    description: Upload your image.
+  - name: altText
+    type: text
+    config:
+      required: false
+    label: Alt Text
+    description: Provide some alt text that describes your image to users with accessibility
+      issues.
+  label: Image
+  description: Add an image for your hero block
