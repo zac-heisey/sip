@@ -5,7 +5,13 @@ fields:
 - name: buttons
   type: field_group_list
   fields:
-  - name: button
+  - name: buttonLabel
+    type: text
+    config:
+      required: false
+    label: Button Label
+    description: A label for your button as reference.
+  - name: buttonInfo
     type: field_group
     config: {}
     fields:
@@ -38,7 +44,8 @@ fields:
       label: URL
       description: The URL for your button. This can be either an internal or external
         URL.
-    label: Button
+    label: Button Info
+    description: Add information for your new button.
   config:
     min: 
     max: 
