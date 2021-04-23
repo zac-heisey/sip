@@ -34,41 +34,6 @@ fields:
     description: The URL for your button. This can be either an internal or external
       URL.
     label: URL
-  - name: buttonInfo
-    type: field_group
-    config: {}
-    fields:
-    - name: text
-      type: text
-      config:
-        required: false
-      label: Text
-      description: Text for your button.
-    - name: color
-      type: select
-      default: white
-      config:
-        required: false
-        options:
-        - white
-        - blue
-        - yellow
-        source:
-          type: simple
-          section: 
-          file: 
-          path: 
-      label: Color
-      description: Select the background color of your button.
-    - name: url
-      type: text
-      config:
-        required: false
-      label: URL
-      description: The URL for your button. This can be either an internal or external
-        URL.
-    label: Button Info
-    description: Add information for your new button.
   config:
     min: 
     max: 
