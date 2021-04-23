@@ -1,4 +1,47 @@
 ---
 label: Buttons
 hide_body: true
-fields: []
+fields:
+- name: buttons
+  type: field_group_list
+  fields:
+  - name: button
+    type: field_group
+    config: {}
+    fields:
+    - name: color
+      type: select
+      default: white
+      config:
+        required: false
+        options:
+        - white
+        - blue
+        - yellow
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Color
+      description: Select the background color of your button.
+    - name: buttonText
+      type: text
+      config:
+        required: false
+      label: Button Text
+      description: Text for your button.
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+      description: The URL for your button. This can be either an internal or external
+        URL.
+    label: Button
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Buttons
+  description: Add call-to-action button(s) to your block
