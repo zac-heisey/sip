@@ -1,0 +1,71 @@
+---
+label: Page Builder
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: field_group_list
+  name: blocks
+  label: blocks
+  fields:
+  - type: text
+    name: template
+    label: template
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: heading
+    label: heading
+  - type: text
+    name: subHeading
+    label: subHeading
+  - type: field_group
+    name: image
+    label: image
+    fields:
+    - type: textarea
+      name: source
+      label: source
+    - type: text
+      name: altText
+      label: altText
+  - type: field_group
+    name: cta-1
+    label: cta-1
+    fields:
+    - type: boolean
+      name: enabled
+      label: enabled
+    - type: text
+      name: color
+      label: color
+    - type: text
+      name: button-text
+      label: button-text
+    - type: text
+      name: url
+      label: url
+  - type: field_group
+    name: cta-2
+    label: cta-2
+    fields:
+    - type: boolean
+      name: enabled
+      label: enabled
+    - type: text
+      name: color
+      label: color
+    - type: text
+      name: button-text
+      label: button-text
+    - type: text
+      name: url
+      label: url
