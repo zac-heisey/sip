@@ -6,7 +6,7 @@ fields:
   name: layout
   label: layout
   hidden: true
-  default: blocks
+  default: layouts/blocks.njk
 - type: text
   name: title
   label: Title
@@ -26,8 +26,8 @@ fields:
   - hero
   - body-content
   config:
-    min: 
-    max: 
+    min:
+    max:
   description: Select from the list of block types to build your page.
 pages:
 - components.md
