@@ -29,3 +29,5 @@ fields:
     min: 
     max: 
   description: Select from the list of block types to build your page.
+pages:
+- components.md
