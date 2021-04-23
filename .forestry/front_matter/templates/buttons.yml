@@ -5,12 +5,35 @@ fields:
 - name: buttons
   type: field_group_list
   fields:
-  - name: buttonLabel
+  - name: buttonText
     type: text
     config:
       required: false
-    label: Button Label
-    description: A label for your button as reference.
+    label: Button Text
+    description: Text for your button.
+  - name: color
+    type: select
+    default: white
+    config:
+      required: false
+      options:
+      - white
+      - blue
+      - yellow
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Color
+    description: Select the background color of your button.
+  - name: url
+    type: text
+    config:
+      required: false
+    description: The URL for your button. This can be either an internal or external
+      URL.
+    label: URL
   - name: buttonInfo
     type: field_group
     config: {}
