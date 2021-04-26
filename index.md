@@ -3,14 +3,6 @@ layout: layouts/blocks.njk
 title: Homepage Title Goes Here 123
 description: ''
 blocks:
-- template: hero
-  type: hero
-  heading: The true measure of any society can be found in how it treats its most
-    vulnerable members.
-  subHeading: "- Mahatma Gandhi"
-  image:
-    source: https://images.unsplash.com/photo-1530490125459-847a6d437825?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1363&q=80
-    altText: This is some sample alt text for the image
 - template: body-content
   type: body-content
 
