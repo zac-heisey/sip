@@ -35,10 +35,12 @@
 :root {
 
   /* Fonts */
+
   --system-font: Arial, sans-serif;
   --nunito-sans: 'Nunito Sans', Arial, sans-serif;
 
   /* Colors */
+
   --blue: #3fabe2;
   --yellow: #fedf34;
   --dark-gray: #222222;
@@ -46,6 +48,7 @@
   --white: #fff;
 
   /* Breakpoints (for reference only - CSS variables can't be used in media queries) */
+
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
@@ -86,6 +89,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* Make images easier to work with */
+
 img {
 
   display: block;
@@ -129,6 +133,7 @@ img {
 html {
 
   scroll-behavior: smooth;
+  overflow: hidden;
 
 }
 
@@ -146,5 +151,98 @@ body {
 .fonts-loaded body {
 
   font-family: var(--nunito-sans);
+
+}
+
+/*== Grid System Styles ==*/
+
+section {
+
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+section > .lock {
+
+  max-width: 1200px;
+  height: auto;
+  margin: 0 1rem;
+
+}
+
+section > .lock .row {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 0px;
+  height: auto;
+
+}
+
+section > .lock .row > .container {
+
+  grid-column: 1 / span 4;
+
+}
+
+/* Increase lock margin */
+
+@media (min-width: 576px) {
+
+  section > .lock {
+
+    margin: 0 2rem;
+
+  }
+
+}
+
+/* Tablet grid */
+
+@media (min-width: 768px) {
+
+  section > .lock .row {
+
+    grid-template-columns: repeat(8, 1fr);
+
+  }
+
+}
+
+/* Desktop grid */
+
+@media (min-width: 992px) {
+
+  section > .lock .row {
+
+    grid-template-columns: repeat(12, 1fr);
+
+  }
+
+}
+
+/* Center lock on large screens */
+
+@media (min-width: 1264px) {
+
+  section > .lock {
+
+    margin: 0 auto;
+
+  }
+
+}
+
+/*== Hero Block Styles ==*/
+
+section.hero .yellow-border {
+
+  border: 8px solid var(--yellow);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }

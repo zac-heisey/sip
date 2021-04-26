@@ -2,10 +2,30 @@
 
   <div class="lock">
 
-    <h2>{{ block.heading }}</h2>
-    <h3>{{ block.subHeading }}</h3>
+    <div class="row">
 
-    <img src="{{ block.image.source }}" alt="{{ block.image.altText }}">
+      <!-- Hero block image -->
+      <div class="container image">
+        <div class="yellow-border"></div>
+        <img src="{{ block.image.source }}" alt="{{ block.image.altText }}">
+      </div>
+
+      <!-- Hero block text -->
+      <div class="container text">
+        <h2>{{ block.heading }}</h2>
+        <h3>{{ block.subHeading }}</h3>
+
+        <!-- Hero block buttons (if any) -->
+        {% if block.buttons.length > 0 %}
+        <div class="buttons">
+          {% for button in block.buttons %}
+            <a href="{{ button.url }}" class="btn {{ button.color }}">{{ button.buttonText }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
 
   </div>
 

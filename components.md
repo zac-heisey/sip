@@ -16,17 +16,9 @@ blocks:
   - buttonText: Learn More
     color: blue
     url: "#"
-    buttonInfo:
-      color: white
-      text: ''
-      url: ''
   - buttonText: Get Involved
     color: white
     url: "#"
-    buttonInfo:
-      color: white
-      text: ''
-      url: ''
 - template: body-content
   type: body-content
 
