@@ -408,13 +408,13 @@ section.hero  h3 {
 
   section.hero .container.image {
 
-    grid-column: 1 / span 4;
+    grid-column: 5 / span 4;
 
   }
 
   section.hero .container.text {
 
-    grid-column: 5 / span 4;
+    grid-column: 1 / span 4;
     margin: 0;
     z-index: 0;
 
