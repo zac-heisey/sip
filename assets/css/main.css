@@ -207,21 +207,24 @@ p, li {
 
 }
 
+/* Header & Menu */
+
+header#menu a.logo img {
+
+  max-width: 177px;
+  margin: 0;
+
+}
+
 /* Buttons */
 
 .btn {
 
   display: inline-block;
   font-size: 1.125rem;
-  margin: 1.125rem 0;
+  margin: 0.5rem 1rem 0 0.5rem;
   padding: 0.5rem 1.125rem;
   border-radius: 5px;
-
-}
-
-.btn + .btn {
-
-  margin-left: 1rem;
 
 }
 
@@ -287,6 +290,7 @@ section > .lock .row {
   grid-template-rows: 1fr;
   grid-column-gap: 1.5rem;
   grid-row-gap: 0px;
+  grid-auto-flow: dense;
   height: auto;
 
 }
@@ -390,6 +394,9 @@ section.hero .yellow-border {
 
 section.hero .container.text {
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-column: span 3;
   background-color: var(--white);
   margin-top: -12rem;
@@ -406,15 +413,24 @@ section.hero  h3 {
 
 @media (min-width: 768px) {
 
+  section.hero .yellow-border {
+
+    right: 0;
+    width: 120%;
+
+  }
+
   section.hero .container.image {
 
     grid-column: 5 / span 4;
+    margin-left: 0;
 
   }
 
   section.hero .container.text {
 
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
+    padding: 0;
     margin: 0;
     z-index: 0;
 
