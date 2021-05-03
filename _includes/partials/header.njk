@@ -16,9 +16,19 @@
     <nav id="main-menu">
       <!-- Primary Nav Items -->
       <ul class="primary-nav-items">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Get Involved</a></li>
+        {% for link in nav %}
+        <li>
+          <a href="{{ link.url }}">{{ link.name }}</a>
+          {% if link.submenu %}
+          <!-- Secondary Nav Items -->
+          <ul class="secondard-nav-items">
+            {% for link in link.submenu %}
+            <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
       </ul>
     </nav>
 
