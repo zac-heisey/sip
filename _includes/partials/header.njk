@@ -2,15 +2,15 @@
 
   <div class="lock">
 
-    <!-- Hamburger Menu Button (mobile-only) -->
-    {# <button aria-expanded="false">
-      <span class="sr-only">Menu</span>
-    </button> #}
-
     <!-- SIP Logo -->
     <a href="/" class="logo">
       <img src="/assets/images/sip-logo-tr.png" alt="SIP logo">
     </a>
+
+    <!-- Hamburger Menu Button (mobile-only) -->
+    <button aria-expanded="false" aria-controls="main-menu" class="icon-menu">
+      <span class="sr-only">Menu</span>
+    </button>
 
     <!-- Main Menu (for accessible nesting, see https://codepen.io/zheisey/pen/dyPVVWQ) -->
     <nav id="main-menu">
@@ -18,14 +18,16 @@
       <ul class="primary-nav-items">
         {% for link in nav %}
         <li>
-          <a href="{{ link.url }}">{{ link.name }}</a>
-          {% if link.submenu %}
+          {% if link.submenu.length > 0 %}
+          <button aria-expanded="false">{{ link.name }}</button>
           <!-- Secondary Nav Items -->
           <ul class="secondard-nav-items">
             {% for link in link.submenu %}
             <li><a href="{{ link.url }}">{{ link.name }}</a></li>
             {% endfor %}
           </ul>
+          {% else %}
+          <a href="{{ link.url }}">{{ link.name }}</a>
           {% endif %}
         </li>
         {% endfor %}

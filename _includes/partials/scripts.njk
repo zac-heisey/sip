@@ -27,6 +27,120 @@
 
     }
 
+    //== Accessible Nested Menu (see https://codepen.io/zheisey/pen/dyPVVWQ) ==//
+
+    {
+
+      let menuButtons = document.querySelectorAll('header button');
+      let headerMenu = document.querySelector('header nav');
+      let breakpoint = window.matchMedia('(min-width: 576px)');
+
+      // Close open menus
+      function closeOpenMenus() {
+        // Loop through buttons and set aria-expanded to false
+        for (button of menuButtons) {
+          button.setAttribute('aria-expanded', 'false');
+        }
+
+      }
+
+      // Listen for clicks on document
+      document.addEventListener('click', function(event) {
+
+        // Check if click is on a button element
+        if (event.target.nodeName === 'BUTTON') {
+
+          // If the menu button was clicked AND there are drop-down menus open, close all drop-down menus
+          if (event.target === menuButtons[0] && menuButtons[0].getAttribute('aria-expanded') === 'true') {
+
+            closeOpenMenus();
+            return;
+
+          }
+
+          // Otherise, expand/close drop-down menus based on aria-expanded attribute
+          if (event.target.getAttribute('aria-expanded') === 'false') {
+
+            event.target.setAttribute('aria-expanded', 'true');
+
+          }
+
+          else {
+
+            event.target.setAttribute('aria-expanded', 'false');
+
+          }
+
+        }
+
+      }, false);
+
+      // Listen for keydown event on document
+      document.addEventListener('keydown', function(event) {
+
+        if (event.key === 'Escape') {
+
+          // If target is already expanded, close it
+          if (event.target.getAttribute('aria-expanded') === 'true') {
+
+            event.target.setAttribute('aria-expanded', 'false');
+
+          }
+
+          // Otherwise, close the nearest open menu
+          else {
+
+            var nearestOpen = event.target.closest('ul').previousElementSibling;
+            if (nearestOpen && nearestOpen.getAttribute('aria-expanded') === 'true') {
+
+              nearestOpen.setAttribute('aria-expanded', 'false');
+              nearestOpen.focus();
+
+            }
+
+            else {
+
+              closeOpenMenus();
+              menuButtons[0].focus();
+
+            }
+
+          }
+
+        }
+
+      }, false);
+
+      // Listen for focusout on header menu
+      headerMenu.addEventListener('focusout', function(event) {
+
+        if (breakpoint.matches) {
+
+          var parent = event.target.closest('header nav > ul > li');
+
+          if (parent && !parent.contains(event.relatedTarget)) {
+
+            closeOpenMenus();
+
+          }
+
+        }
+
+      }, false);
+
+      // Listen for resize on window
+      window.addEventListener('resize', function(event) {
+
+        if (breakpoint.matches) {
+
+          closeOpenMenus();
+
+        }
+
+      }, true);
+
+    }
+
   }()); // IIFE wrapper end
 
 </script>
