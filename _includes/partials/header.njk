@@ -19,7 +19,7 @@
         {% for link in nav %}
         <li>
           {% if link.submenu.length > 0 %}
-          <button aria-expanded="false">{{ link.name }}</button>
+          <button aria-expanded="false">{{ link.name }} ▼</button>
           <!-- Secondary Nav Items -->
           <ul class="secondard-nav-items">
             {% for link in link.submenu %}
