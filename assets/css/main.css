@@ -106,7 +106,6 @@ button {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  font-size: 1.125rem;
   background: 0 0;
   margin: 0;
   padding: 0;
@@ -235,6 +234,13 @@ a:hover, a:focus {
 }
 
 /* Buttons */
+
+button {
+
+  font-family: var(--nunito-sans);
+  font-size: 1.125rem;
+
+}
 
 .btn {
 
@@ -452,6 +458,7 @@ header#menu nav button[aria-expanded="true"] + ul {
     width: auto;
     min-width: 150px;
     padding: 1rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   }
 
