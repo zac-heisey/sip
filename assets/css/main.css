@@ -494,12 +494,19 @@ section {
 
 }
 
+section + section {
+
+  margin: 2rem auto;
+  overflow: hidden;
+
+}
+
 .lock {
 
   max-width: 1200px;
   height: auto;
   margin: 0 1rem;
-
+  
 }
 
 .lock .row {
