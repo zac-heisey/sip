@@ -248,7 +248,7 @@ button {
   margin: 0.5rem 1rem 0 0.5rem;
   padding: 0.25rem 1rem;
   border-radius: 5px;
-  white-space: normal;
+  white-space: nowrap;
 
 }
 
@@ -619,7 +619,7 @@ section.hero .container.text {
   grid-column: span 3;
   background-color: var(--white);
   margin-top: -12rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   z-index: 1;
 
 }
