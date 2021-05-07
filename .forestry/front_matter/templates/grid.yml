@@ -45,7 +45,7 @@ fields:
       label: Item Type
       description: Choose the media type for your grid item (text, image, video, or
         donation widget)
-    - name: text-info
+    - name: text
       type: field_group
       config: {}
       fields:
@@ -81,10 +81,52 @@ fields:
         template: buttons
         description: Buttons for your text grid item.
         label: Buttons
-      label: Text Info
+      label: Text
       showOnly:
         field: item-type
         value: text
+    - name: image
+      type: field_group
+      config: {}
+      fields:
+      - name: source
+        type: file
+        config:
+          maxSize: 64
+        description: Upload your image.
+        label: Source
+      - name: alt-text
+        type: text
+        config:
+          required: false
+        label: Alt Text
+        description: Provide some alt text that describes your image to users with
+          accessibility issues.
+      label: Image
+      showOnly:
+        field: item-type
+        value: image
+    - name: video
+      type: field_group
+      config: {}
+      fields:
+      - name: video-cover-image
+        type: file
+        config:
+          maxSize: 64
+        description: 'Select a cover image for your video.<br><em>Ideal size: TBD</em>'
+        label: Video Cover Image
+      - name: video-id
+        type: text
+        config:
+          required: false
+        label: Video ID
+        description: The ID of the YouTube video to be used (e.g. youtube.com/watch?v=<strong><em>{{video
+          id is here}})</em></strong>
+      label: Video
+      showOnly:
+        field: item-type
+        value: video
     config:
       min: 1
       max: 3
