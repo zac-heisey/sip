@@ -25,6 +25,7 @@ fields:
   template_types:
   - hero
   - body-content
+  - grid
   config:
     min: 
     max: 
