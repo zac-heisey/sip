@@ -1,4 +1,91 @@
 ---
 label: Grid
 hide_body: true
-fields: []
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
+  default: grid
+- name: grid-rows
+  type: field_group_list
+  fields:
+  - name: row
+    type: text
+    config:
+      required: false
+    label: Row
+    default: Grid Row
+  - name: grid-items
+    type: field_group_list
+    fields:
+    - name: item
+      type: text
+      config:
+        required: false
+      label: Item
+      default: Grid Item
+    - name: item-type
+      type: select
+      default: ''
+      config:
+        required: false
+        options:
+        - text
+        - image
+        - video
+        - donation-widget
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Item Type
+      description: Choose the media type for your grid item (text, image, video, or
+        donation widget)
+    - name: text-info
+      type: field_group
+      config: {}
+      fields:
+      - name: content
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html-blocks
+        label: Content
+        description: Add content for your text grid item.
+      - name: background-color
+        type: select
+        default: none
+        config:
+          required: false
+          options:
+          - blue
+          - yellow
+          - none
+          source:
+            type: simple
+            section: 
+            file: 
+            path: 
+        label: Background Color
+        description: Select a background color for your text grid item.
+      label: Text Info
+      showOnly:
+        field: item-type
+        value: text
+    config:
+      min: 1
+      max: 3
+      labelField: item
+    label: Grid Items
+  config:
+    min: 
+    max: 
+    labelField: row
+  label: Grid Rows
