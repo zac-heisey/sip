@@ -245,7 +245,7 @@ button {
 .btn {
 
   display: inline-block;
-  margin: 0.5rem 1rem 0 0.5rem;
+  margin: 0.25rem;
   padding: 0.25rem 1rem;
   border-radius: 5px;
   white-space: nowrap;
@@ -506,7 +506,7 @@ section + section {
   max-width: 1200px;
   height: auto;
   margin: 0 1rem;
-  
+
 }
 
 .lock .row {
