@@ -75,6 +75,12 @@ fields:
             path: 
         label: Background Color
         description: Select a background color for your text grid item.
+      - name: buttons
+        type: include
+        config: {}
+        template: buttons
+        description: Buttons for your text grid item.
+        label: Buttons
       label: Text Info
       showOnly:
         field: item-type
