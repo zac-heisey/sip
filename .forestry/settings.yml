@@ -15,10 +15,10 @@ sections:
   label: Posts
   create: documents
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: sip
+public_path: https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   install_dependencies_command: npm install
