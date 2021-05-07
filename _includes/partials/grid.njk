@@ -1,0 +1,48 @@
+<section class="grid">
+
+  <div class="lock">
+
+    {% for row in block.gridRows %}
+
+    <div class="row">
+
+      {% for item in row.gridItems %}
+
+        {% if item.itemType == 'text' %}
+
+        <!-- Text grid item -->
+        <div class="container text">
+          {{ item.text.content | safe }}
+
+          <!-- Buttons (if any) -->
+          {% if item.text.buttons.length > 0 %}
+          <div class="buttons">
+            {% for button in item.text.buttons %}
+              <a href="{{ button.url }}" class="btn {{ button.color }}">{{ button.buttonText }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+        </div>
+
+        {% endif %}
+
+        {% if item.itemType == 'image' %}
+
+        <!-- Image grid item -->
+        <div class="container image">
+          <div class="yellow-border"></div>
+          <img src="{{ item.image.source }}" alt="{{ item.image.altText }}">
+        </div>
+
+        {% endif %}
+
+      {% endfor %}
+
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+</section>

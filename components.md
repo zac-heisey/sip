@@ -23,13 +23,13 @@ blocks:
   type: body-content
 - template: grid
   type: grid
-  grid-rows:
+  gridRows:
   - row: Text + Image
-    grid-items:
+    gridItems:
     - item: Text
-      item-type: text
+      itemType: text
       text:
-        background-color: none
+        backgroundColor: none
         content: "<h1>Welcome to the Secure Information Project</h1><p>Secure Information
           Project (SIP) exists to document and information security for vulnerable
           families, new immigrants, refugees, and asylum-seekers in the United States<br><br>Gentrify
@@ -39,22 +39,22 @@ blocks:
         buttons: []
       image:
         source: ''
-        alt-text: ''
+        altText: ''
       video:
-        video-cover-image: ''
-        video-id: ''
+        videoCoverImage: ''
+        videoId: ''
     - item: Image
-      item-type: image
+      itemType: image
       text:
-        background-color: none
+        backgroundColor: none
         content: ''
         buttons: []
       image:
         source: "/v1620418548/sip/placeholder-4.jpg"
-        alt-text: some alt text describing the image above
+        altText: some alt text describing the image
       video:
-        video-cover-image: ''
-        video-id: ''
+        videoCoverImage: ''
+        videoId: ''
 
 ---
 # Heading 1 - Body Content Block

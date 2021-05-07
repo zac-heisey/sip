@@ -9,7 +9,7 @@ fields:
   label: type
   hidden: true
   default: grid
-- name: grid-rows
+- name: gridRows
   type: field_group_list
   fields:
   - name: row
@@ -18,7 +18,7 @@ fields:
       required: false
     label: Row
     default: Grid Row
-  - name: grid-items
+  - name: gridItems
     type: field_group_list
     fields:
     - name: item
@@ -27,7 +27,7 @@ fields:
         required: false
       label: Item
       default: Grid Item
-    - name: item-type
+    - name: itemType
       type: select
       default: ''
       config:
@@ -39,9 +39,9 @@ fields:
         - donation-widget
         source:
           type: simple
-          section: 
-          file: 
-          path: 
+          section:
+          file:
+          path:
       label: Item Type
       description: Choose the media type for your grid item (text, image, video, or
         donation widget)
@@ -59,7 +59,7 @@ fields:
             format: html-blocks
         label: Content
         description: Add content for your text grid item.
-      - name: background-color
+      - name: backgroundColor
         type: select
         default: none
         config:
@@ -70,9 +70,9 @@ fields:
           - none
           source:
             type: simple
-            section: 
-            file: 
-            path: 
+            section:
+            file:
+            path:
         label: Background Color
         description: Select a background color for your text grid item.
       - name: buttons
@@ -83,7 +83,7 @@ fields:
         label: Buttons
       label: Text
       showOnly:
-        field: item-type
+        field: itemType
         value: text
     - name: image
       type: field_group
@@ -95,7 +95,7 @@ fields:
           maxSize: 64
         description: Upload your image.
         label: Source
-      - name: alt-text
+      - name: altText
         type: text
         config:
           required: false
@@ -104,19 +104,19 @@ fields:
           accessibility issues.
       label: Image
       showOnly:
-        field: item-type
+        field: itemType
         value: image
     - name: video
       type: field_group
       config: {}
       fields:
-      - name: video-cover-image
+      - name: videoCoverImage
         type: file
         config:
           maxSize: 64
         description: 'Select a cover image for your video.<br><em>Ideal size: TBD</em>'
         label: Video Cover Image
-      - name: video-id
+      - name: videoId
         type: text
         config:
           required: false
@@ -125,7 +125,7 @@ fields:
           id is here}})</em></strong>
       label: Video
       showOnly:
-        field: item-type
+        field: itemType
         value: video
     config:
       min: 1
@@ -133,7 +133,7 @@ fields:
       labelField: item
     label: Grid Items
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: row
   label: Grid Rows
