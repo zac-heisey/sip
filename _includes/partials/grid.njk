@@ -32,7 +32,7 @@
         <!-- Image grid item -->
         <div class="container image">
           <div class="yellow-border"></div>
-          <img src="{{ item.image.source }}" alt="{{ item.image.altText }}">
+          {{ macro.imageSizes(item.image.source, item.image.altText) }}
         </div>
 
         {% endif %}
