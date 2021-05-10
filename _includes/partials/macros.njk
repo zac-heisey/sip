@@ -1,0 +1,23 @@
+<!-- Image Sizes (https://web.dev/codelab-specifying-multiple-slot-widths/) -->
+
+{% macro imageSizes(imageSource, altText) %}
+
+<img
+  src="{{ site.cloudinary }},w_auto{{ imageSource }}"
+  srcset="
+  {{ site.cloudinary }},w_576{{ imageSource }} 576w,
+  {{ site.cloudinary }},w_768{{ imageSource }} 768w,
+  {{ site.cloudinary }},w_992{{ imageSource }} 992w,
+  {{ site.cloudinary }},w_1200{{ imageSource }} 1200w
+  "
+  sizes="
+  (max-width: 768px) 100vw,
+  535px
+  "
+  alt="{{ altText }}"
+  width="800"
+  height="450"
+  loading="lazy"
+>
+
+{% endmacro %}
