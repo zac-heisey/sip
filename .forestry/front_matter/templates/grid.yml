@@ -9,6 +9,21 @@ fields:
   label: type
   hidden: true
   default: grid
+- name: backgroundColor
+  type: select
+  default: none
+  config:
+    required: false
+    options:
+    - blue
+    - yellow
+    - none
+    source:
+      type: simple
+      section:
+      file:
+      path:
+  label: Background Color
 - name: gridRows
   type: field_group_list
   fields:
@@ -18,6 +33,7 @@ fields:
       required: false
     label: Row
     default: Grid Row
+    description: Select a background color for your text grid item.
   - name: gridItems
     type: field_group_list
     fields:
@@ -59,22 +75,6 @@ fields:
             format: html-blocks
         label: Content
         description: Add content for your text grid item.
-      - name: backgroundColor
-        type: select
-        default: none
-        config:
-          required: false
-          options:
-          - blue
-          - yellow
-          - none
-          source:
-            type: simple
-            section:
-            file:
-            path:
-        label: Background Color
-        description: Select a background color for your text grid item.
       - name: buttons
         type: include
         config: {}

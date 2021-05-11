@@ -1,14 +1,14 @@
-<section class="grid">
+<section class="grid{% if block.backgroundColor != "none" %} {{ block.backgroundColor }}{% endif %}">
 
   <div class="lock">
 
     {% for row in block.gridRows %}
 
-    <div class="row">
+    <div class="row item-{{ row.gridItems.length }}">
 
       {% for item in row.gridItems %}
 
-        {% if item.itemType == 'text' %}
+        {% if item.itemType == "text" %}
 
         <!-- Text grid item -->
         <div class="container text">
@@ -27,12 +27,22 @@
 
         {% endif %}
 
-        {% if item.itemType == 'image' %}
+        {% if item.itemType == "image" %}
 
         <!-- Image grid item -->
         <div class="container image">
           <div class="yellow-border"></div>
           {{ macro.imageSizes(item.image.source, item.image.altText) }}
+        </div>
+
+        {% endif %}
+
+        {% if item.itemType == "video" %}
+
+        <!-- Video grid item -->
+        <div class="container video">
+          <lite-youtube videoid="{{ item.video.videoId }}" {% if item.video.videoCoverImage != '' %} style="background-image: url('{{ site.cloudinary }}{{ item.video.videoCoverImage }}');" {% else %} style="background-image: url('https://i.ytimg.com/vi/{{ item.video.videoId }}/hqdefault.jpg');" {% endif %}>
+          </lite-youtube>
         </div>
 
         {% endif %}
