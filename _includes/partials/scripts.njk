@@ -141,6 +141,24 @@
 
     }
 
+    //== YouTube Lite ==//
+
+    {
+
+      // If there are videos on the page, append lite-youtube-embed script to footer
+      if (document.querySelector('lite-youtube')) {
+
+        let footer = document.querySelector('footer');
+        let js = document.createElement('script');
+
+        js.type = "text/javascript";
+        js.src = "/assets/js/lite-youtube-embed.js";
+        footer.appendChild(js);
+
+      }
+
+    }
+
   }()); // IIFE wrapper end
 
 </script>
