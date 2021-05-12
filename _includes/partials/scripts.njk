@@ -145,14 +145,21 @@
 
     {
 
-      // If there are videos on the page, append lite-youtube-embed script to footer
+      // If there are videos on the page, append lite-youtube-embed script to footer and styles to head
       if (document.querySelector('lite-youtube')) {
 
+        let head = document.querySelector('head');
         let footer = document.querySelector('footer');
+        let css = document.createElement('link');
         let js = document.createElement('script');
 
-        js.type = "text/javascript";
-        js.src = "/assets/js/lite-youtube-embed.js";
+        css.rel = 'stylesheet';
+        css.href = '/assets/css/lite-youtube-embed.css';
+
+        js.type = 'text/javascript';
+        js.src = '/assets/js/lite-youtube-embed.js';
+
+        head.appendChild(css);
         footer.appendChild(js);
 
       }
