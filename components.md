@@ -67,6 +67,19 @@ blocks:
       video:
         videoCoverImage: ''
         videoId: '15VU_mbcrB0'
+    - item: Donation Widget
+      itemType: donationWidget
+      text:
+        content: ''
+        buttons: []
+      image:
+        source: ''
+        altText: ''
+      video:
+        videoCoverImage: ''
+        videoId: ''
+      donationWidget:
+        heading: 'Give to SIP'
 
 ---
 # Heading 1 - Body Content Block
