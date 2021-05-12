@@ -23,7 +23,6 @@ blocks:
   type: body-content
 - template: grid
   type: grid
-  backgroundColor: none
   gridRows:
   - row: Text + Image
     gridItems:

@@ -9,21 +9,6 @@ fields:
   label: type
   hidden: true
   default: grid
-- name: backgroundColor
-  type: select
-  default: none
-  config:
-    required: false
-    options:
-    - blue
-    - yellow
-    - none
-    source:
-      type: simple
-      section:
-      file:
-      path:
-  label: Background Color
 - name: gridRows
   type: field_group_list
   fields:
