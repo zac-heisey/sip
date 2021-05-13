@@ -770,6 +770,12 @@ section.grid .container.donation .widget-wrapper {
 
 @media (min-width: 768px) {
 
+  section.grid .row {
+
+    min-height: 450px;
+
+  }
+
   section.grid .row.item-1 > .container {
 
     grid-column: span 8;
@@ -781,13 +787,6 @@ section.grid .container.donation .widget-wrapper {
     bottom: 2rem;
     left: -1rem;
     right: auto;
-
-  }
-
-  section.grid .container.image:first-child .yellow-border {
-
-    left: auto;
-    right: -1rem;
 
   }
 
@@ -862,12 +861,6 @@ section.grid .container.donation .widget-wrapper {
   section.grid .row.item-2 > .container.video:first-child {
 
     grid-column: span 6;
-
-  }
-
-  section.grid .container.text {
-
-    margin: 0;
 
   }
 
