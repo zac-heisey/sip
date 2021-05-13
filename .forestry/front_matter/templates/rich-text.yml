@@ -7,4 +7,4 @@ fields:
   config:
     required: false
   label: type
-  default: richText
+  default: rich-text
