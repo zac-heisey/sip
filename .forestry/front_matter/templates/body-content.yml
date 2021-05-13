@@ -9,3 +9,13 @@ fields:
   label: type
   hidden: true
   default: body-content
+- name: testNumber
+  type: number
+  label: Test Number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
