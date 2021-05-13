@@ -8,3 +8,27 @@ fields:
     required: false
   label: type
   default: rich-text
+  hidden: true
+- name: backgroundColor
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Color
+  description: The background color of your rich text block.
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  description: Add content to your rich text block.
+  label: Content
