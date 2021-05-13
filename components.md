@@ -86,7 +86,7 @@ blocks:
     stuff...
     things...
     cosas...</code></pre>
-  backgroundColor: ''
+  backgroundColor: none
 
 ---
 # Heading 1 - Body Content Block
