@@ -885,9 +885,21 @@ section.grid .container.donation .widget-wrapper {
 
 /* Rich text / Body content block */
 
-section.rick-text .lock,
+section.rich-text .lock,
 section.body-content .lock {
 
   overflow: auto;
+
+}
+
+section.rich-text.yellow {
+
+  background-color: rgba(254, 223, 52, 0.65);
+
+}
+
+section.rich-text.blue {
+
+  background-color: rgba(63, 171, 226, 0.65);
 
 }
