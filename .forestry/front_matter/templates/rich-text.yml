@@ -11,10 +11,13 @@ fields:
   hidden: true
 - name: backgroundColor
   type: select
-  default: []
+  default: none
   config:
     required: false
-    options: []
+    options:
+    - none
+    - yellow
+    - blue
     source:
       type: simple
       section: 
