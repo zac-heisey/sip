@@ -2,7 +2,7 @@
 
   <div class="lock">
 
-    {{ block.content | safe }}
+    {{ block.content | replace("<li><p>", "<li>") | replace("</p></li>", "</li>") | safe }}
 
   </div>
 

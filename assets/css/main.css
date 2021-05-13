@@ -72,8 +72,8 @@ but NOT margin, in total box size */
 
 /* Removes margin & padding from all browsers */
 
-html, body, div, ul, li,
-h1, h2, h3, h4, h5, h6 {
+html, body, div, ul, ol, li,
+h1, h2, h3, h4, h5, h6, blockquote {
 
   margin: 0;
   padding: 0;
@@ -205,10 +205,10 @@ h3 {
 
 }
 
-ul {
+ul, ol {
 
   list-style-position: inside;
-  margin-inline-start: 1rem;
+  margin: 1.5rem;
 
 }
 
@@ -222,6 +222,23 @@ a:hover, a:focus {
 
   border-bottom: 2px solid var(--blue);
   transition: border-bottom 0.1s;
+
+}
+
+blockquote {
+
+  margin: 1.5rem 0;
+  padding: 0 1.5rem;
+  border-left: 4px solid var(--yellow);
+
+}
+
+pre {
+
+  background-color: #efefef;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
 
 }
 
