@@ -26,6 +26,7 @@ fields:
   - hero
   - body-content
   - grid
+  - rich-text
   config:
     min: 
     max: 
