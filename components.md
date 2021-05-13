@@ -81,21 +81,11 @@ blocks:
         heading: Give to SIP
 - template: rich-text
   type: rich-text
-  content: <h1>Heading 1 - Rich Text Block</h1><p>Pop-up hexagon edison bulb chicharrones
-    yuccie fam. Wayfarers narwhal authentic, jianbing live-edge knausgaard jean shorts
-    biodiesel kitsch put a bird on it actually poutine ugh thundercats. Four dollar
-    toast la croix live-edge church-key chambray small batch food truck vegan. Ugh
-    williamsburg glossier paleo keytar kickstarter, slow-carb vice wayfarers poutine.</p><p><img
-    src="https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto/v1620418548/sip/placeholder-2.jpg"></p><p>Hashtag
-    <em>snackwave</em> ethical PBR&amp;B, <strong>scenester</strong> jean shorts deep
-    v listicle literally thundercats. Palo santo next level twee copper mug vice.
-    <a href="#" title="" target="_blank">Occupy ennui whatever</a> literally pitchfork.
-    Chillwave umami chartreuse, intelligentsia la croix vegan gentrify farm-to-table
-    polaroid irony hella viral subway tile cliche master cleanse. Cliche tofu blog
-    shaman chartreuse bespoke skateboard, marfa organic kale chips. Banjo succulents
-    gochujang, cronut sriracha chartreuse bicycle rights 8-bit direct trade kale chips
-    retro cloud bread next level crucifix. Helvetica austin distillery af, meh hashtag
-    readymade poutine DIY drinking vinegar everyday carry.</p>
+  content: |-
+    <h1>Heading 1 - Rich Text Block</h1><p>Pop-up hexagon edison bulb chicharrones yuccie fam. Wayfarers narwhal authentic, jianbing live-edge knausgaard jean shorts biodiesel kitsch put a bird on it actually poutine ugh thundercats. Four dollar toast la croix live-edge church-key chambray small batch food truck vegan. Ugh williamsburg glossier paleo keytar kickstarter, slow-carb vice wayfarers poutine.</p><p><img src="https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto/v1620418548/sip/placeholder-2.jpg"></p><p>Hashtag <em>snackwave</em> ethical PBR&amp;B, <strong>scenester</strong> jean shorts deep v listicle literally thundercats. Palo santo next level twee copper mug vice. <a href="#" title="" target="_blank">Occupy ennui whatever</a> literally pitchfork. Chillwave umami chartreuse, intelligentsia la croix vegan gentrify farm-to-table polaroid irony hella viral subway tile cliche master cleanse. Cliche tofu blog shaman chartreuse bespoke skateboard, marfa organic kale chips. Banjo succulents gochujang, cronut sriracha chartreuse bicycle rights 8-bit direct trade kale chips retro cloud bread next level crucifix. Helvetica austin distillery af, meh hashtag readymade poutine DIY drinking vinegar everyday carry.</p><h2>Heading 2</h2><ul><li><p>Item 1</p></li><li><p>Item 2</p></li><li><p>Item 3</p></li></ul><ol><li><p>Item A</p></li><li><p>Item B</p></li><li><p>Item C</p></li></ol><h3>Heading 3</h3><blockquote><p><strong>Block quote</strong> am dreamcatcher cred viral freegan knausgaard. Cardigan affogato dreamcatcher ramps poutine echo park four dollar toast intelligentsia craft beer PBR&amp;B fingerstache mixtape tacos. Taxidermy af gluten-free pabst farm-to-table truffaut yuccie. DIY lomo single-origin coffee bushwick disrupt, etsy vape schlitz.</p></blockquote><p></p><pre><code>Code block lorem ipsum code...
+    stuff...
+    things...
+    cosas...</code></pre>
   backgroundColor: ''
 
 ---
