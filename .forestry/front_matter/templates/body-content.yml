@@ -1,6 +1,6 @@
 ---
 label: Body Content
-hide_body: true
+hide_body: false
 fields:
 - name: type
   type: text
