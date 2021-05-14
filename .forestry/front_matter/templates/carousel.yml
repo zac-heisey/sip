@@ -55,26 +55,26 @@ fields:
       label: Buttons
       description: Include a button(s) to the content area of your slide.
     label: Text
+  - name: image
+    type: field_group
+    config: {}
+    fields:
+    - name: source
+      type: file
+      config:
+        maxSize: 64
+      description: Select an image for your slide.
+      label: Source
+    - name: altText
+      type: text
+      config:
+        required: false
+      label: Alt Text
+      description: Provide some alt text that describes your image to users with accessibility
+        issues.
+    label: Image
   config:
     min: 
     max: 
     labelField: slideTitle
   label: Slide
-- name: image
-  type: field_group
-  config: {}
-  fields:
-  - name: source
-    type: file
-    config:
-      maxSize: 64
-    description: Select an image for your slide.
-    label: Source
-  - name: altText
-    type: text
-    config:
-      required: false
-    label: Alt Text
-    description: Provide some alt text that describes your image to users with accessibility
-      issues.
-  label: Image
