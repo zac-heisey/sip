@@ -87,6 +87,20 @@ blocks:
     things...
     cosas...</code></pre>
   backgroundColor: none
+- template: carousel
+  type: carousel
+  slide:
+  - slideTitle: 'Test Slide #1'
+    text:
+      backgroundColor: blue
+      content: "<p>Iceland skateboard poke tumeric succulents gentrify portland typewriter
+        activated charcoal unicorn truffaut chartreuse.<br><br>XOXO marfa gochujang
+        bicycle rights messenger bag semiotics direct trade.</p>"
+      buttons: []
+    image:
+      source: "/v1620418245/sip/mother-child.jpg"
+      altText: image of a mother holding a child, who is wearing a blue and yellow
+        beanie
 
 ---
 # Heading 1 - Body Content Block
