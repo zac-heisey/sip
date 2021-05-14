@@ -27,6 +27,7 @@ fields:
   - body-content
   - grid
   - rich-text
+  - carousel
   config:
     min: 
     max: 
