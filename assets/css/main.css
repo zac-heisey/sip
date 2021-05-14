@@ -288,6 +288,7 @@ button {
 .btn.white {
 
   color: var(--blue);
+  background-color: var(--white);
   border: 2px solid var(--blue);
 
 }
@@ -806,7 +807,6 @@ section.grid .container.donation .widget-wrapper {
     min-width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
 
   }
 
@@ -904,5 +904,101 @@ section.rich-text.yellow {
 section.rich-text.blue {
 
   background-color: rgba(63, 171, 226, 0.65);
+
+}
+
+/* Carousel block */
+
+section.carousel .yellow-border {
+
+  top: 2rem;
+  bottom: -2rem;
+  width: 100%;
+
+}
+
+section.carousel .container.image {
+
+  position: relative;
+
+}
+
+section.carousel .container.image img {
+
+  min-width: calc(100% + 4rem);
+  height: 320px;
+  margin: 0 0 0 -2rem;
+  object-fit: cover;
+
+}
+
+section.carousel .container.text .wrapper.yellow {
+
+  background-color: var(--yellow);
+
+}
+
+section.carousel .container.text .wrapper.blue {
+
+  color: var(--white);
+  background-color: var(--blue);
+
+}
+
+section.carousel .container.text {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2 / span 3;
+  margin-top: -8rem;
+  z-index: 1;
+
+}
+
+section.carousel .container.text .wrapper {
+
+  padding: 1rem;
+
+}
+
+@media (min-width: 768px) {
+
+  section.carousel .yellow-border {
+
+    top: 2rem;
+    right: -4rem;
+    bottom: 2rem;
+    left: 4rem;
+    width: auto;
+
+  }
+
+  section.carousel .row {
+
+    min-height: 450px;
+
+  }
+
+  section.carousel .container.image img {
+
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+
+  }
+
+  section.carousel .container.image {
+
+    grid-column: span 5;
+
+  }
+
+  section.carousel .container.text {
+
+    grid-column: span 3;
+    margin: 0 0 0 -7rem;
+
+  }
 
 }
