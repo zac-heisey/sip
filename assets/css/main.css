@@ -724,12 +724,6 @@ section.grid .yellow-border {
 
 }
 
-section.grid .container.video .yellow-border {
-
-  left: -1rem;
-
-}
-
 section.grid .container.image {
 
   position: relative;
@@ -820,6 +814,15 @@ section.grid .container.donation .widget-wrapper {
 
     grid-row: auto;
     margin: 0 1rem;
+
+  }
+
+  section.grid .container.video .yellow-border {
+
+    top: 50%;
+    bottom: auto;
+    padding-bottom: calc(110% / (16/9));
+    transform: translateY(-50%);
 
   }
 
