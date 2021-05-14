@@ -1,0 +1,80 @@
+---
+label: Carousel
+hide_body: true
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: type
+  default: carousel
+- name: slide
+  type: field_group_list
+  fields:
+  - name: slideTitle
+    type: text
+    config:
+      required: false
+    label: Slide Title
+    description: A title for your slide for reference.
+  - name: text
+    type: field_group
+    config: {}
+    fields:
+    - name: backgroundColor
+      type: select
+      default: none
+      config:
+        required: false
+        options:
+        - none
+        - blue
+        - yellow
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Background Color
+      description: Choose a background color for your slide's content area.
+    - name: content
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+      label: Content
+      description: Add content for your slide.
+    - name: buttons
+      type: include
+      config: {}
+      template: buttons
+      label: Buttons
+      description: Include a button(s) to the content area of your slide.
+    label: Text
+  config:
+    min: 
+    max: 
+    labelField: slideTitle
+  label: Slide
+- name: image
+  type: field_group
+  config: {}
+  fields:
+  - name: source
+    type: file
+    config:
+      maxSize: 64
+    description: Select an image for your slide.
+    label: Source
+  - name: altText
+    type: text
+    config:
+      required: false
+    label: Alt Text
+    description: Provide some alt text that describes your image to users with accessibility
+      issues.
+  label: Image
