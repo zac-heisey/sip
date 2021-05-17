@@ -94,7 +94,7 @@ blocks:
     text:
       backgroundColor: blue
       content: "<p>Iceland skateboard poke tumeric succulents gentrify portland typewriter
-        activated charcoal unicorn truffaut chartreuse.<br><br>XOXO marfa gochujang
+        activated charcoal unicorn truffaut chartreuse.</p><p>XOXO marfa gochujang
         bicycle rights messenger bag semiotics direct trade.</p>"
       buttons: []
     image:
@@ -108,7 +108,10 @@ blocks:
         haven't heard of them locavore man braid lumbersexual stumptown master cleanse
         tilde knausgaard deep v tumeric.</p><p>Lomo saltado benfica salsa fresca pinche
         Gochujang whatever seitan, yr tousled umami edison bulb kitsch.</p>"
-      buttons: []
+      buttons:
+      - buttonText: Learn More
+        color: blue
+        url: "#"
     image:
       source: "/sip/placeholder-4.jpg"
       altText: image of children in a refugee camp

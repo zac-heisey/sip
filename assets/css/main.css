@@ -921,6 +921,12 @@ section.rich-text.blue {
 
 /* Carousel block */
 
+section.carousel {
+
+  height: 881px;
+
+}
+
 section.carousel .lock {
 
   position: relative;
@@ -1031,6 +1037,12 @@ section.carousel .controls > button {
 }
 
 @media (min-width: 768px) {
+
+  section.carousel {
+
+    height: auto;
+
+  }
 
   section.carousel .slides {
 
