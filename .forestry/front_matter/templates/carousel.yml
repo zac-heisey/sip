@@ -46,6 +46,7 @@ fields:
         wysiwyg: true
         schema:
           format: html-blocks
+        max: 300
       label: Content
       description: Add content for your slide.
     - name: buttons
