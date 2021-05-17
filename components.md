@@ -104,7 +104,10 @@ blocks:
   - slideTitle: 'Test Slide #2'
     text:
       backgroundColor: yellow
-      content: "<p>Synth +1 meditation master cleanse. Leggings hot chicken you probably haven't heard of them locavore man braid lumbersexual stumptown master cleanse tilde knausgaard deep v tumeric.</p><p>Aesthetic fashion axe glossier bitters venmo, typewriter stumptown dreamcatcher ugh activated charcoal crucifix banjo fanny pack.</p>"
+      content: "<p>Synth +1 meditation master cleanse. Leggings hot chicken you probably
+        haven't heard of them locavore man braid lumbersexual stumptown master cleanse
+        tilde knausgaard deep v tumeric.</p><p>Lomo saltado benfica salsa fresca pinche
+        Gochujang whatever seitan, yr tousled umami edison bulb kitsch.</p>"
       buttons: []
     image:
       source: "/sip/placeholder-4.jpg"
@@ -112,7 +115,10 @@ blocks:
   - slideTitle: 'Test Slide #3'
     text:
       backgroundColor: blue
-      content: "<p>YOLO etsy pitchfork, cornhole cray brunch try-hard kitsch schlitz photo booth. Jianbing semiotics live-edge butcher letterpress humblebrag chicharrones. Shabby chic lomo chartreuse taiyaki four loko glossier gluten-free. Selvage dreamcatcher butcher chia kogi.</p>"
+      content: "<p>YOLO etsy pitchfork, cornhole cray brunch try-hard kitsch schlitz
+        photo booth. Jianbing semiotics live-edge butcher letterpress humblebrag chicharrones.
+        Shabby chic lomo chartreuse taiyaki four loko glossier gluten-free. Selvage
+        dreamcatcher butcher chia kogi.</p>"
       buttons: []
     image:
       source: "/sip/placeholder-2.jpg"
