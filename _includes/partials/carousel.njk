@@ -2,36 +2,48 @@
 
   <div class="lock">
 
-    <div class="row">
+    <div class="slides">
 
       {% for slide in block.slide %}
 
-      <!-- Carousel block image -->
-      <div class="container image">
-        <div class="yellow-border"></div>
-        {{ macro.imageSizes(slide.image.source, slide.image.altText) }}
-      </div>
+      <div class="row" data-slide="{{ loop.index }}"{% if loop.index !== 1 %} hidden{% endif %}>
 
-      <!-- Carousel block text -->
-      <div class="container text">
-        <div class="wrapper{% if slide.text.backgroundColor !== "none" %} {{ slide.text.backgroundColor }}{% endif %}">
-
-          {{ slide.text.content | safe }}
-
-          <!-- Hero block buttons (if any) -->
-          {% if slide.text.buttons.length > 0 %}
-          <div class="buttons">
-            {% for button in slide.text.buttons %}
-              <a href="{{ button.url }}" class="btn {{ button.color }}">{{ button.buttonText }}</a>
-            {% endfor %}
-          </div>
-          {% endif %}
-
+        <!-- Carousel block image -->
+        <div class="container image">
+          <div class="yellow-border"></div>
+          {{ macro.imageSizes(slide.image.source, slide.image.altText) }}
         </div>
+
+        <!-- Carousel block text -->
+        <div class="container text">
+          <div class="wrapper{% if slide.text.backgroundColor !== "none" %} {{ slide.text.backgroundColor }}{% endif %}">
+
+            {{ slide.text.content | safe }}
+
+            <!-- Hero block buttons (if any) -->
+            {% if slide.text.buttons.length > 0 %}
+            <div class="buttons">
+              {% for button in slide.text.buttons %}
+                <a href="{{ button.url }}" class="btn {{ button.color }}">{{ button.buttonText }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+          </div>
+        </div>
+
       </div>
 
       {% endfor %}
 
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <!-- Left Arrow -->
+      <button class="icon-left-arrow" type="button" name="prev" aria-label="Left Arrow"></button>
+      <!-- Right Arrow -->
+      <button class="icon-right-arrow" type="button" name="next" aria-label="Right Arrow"></button>
     </div>
 
   </div>

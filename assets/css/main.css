@@ -333,6 +333,18 @@ button {
 
 }
 
+.icon-left-arrow::before {
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3e%3cpath fill='%23222222' d='M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z'/%3e%3c/svg%3e");
+
+}
+
+.icon-right-arrow::before {
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3e%3cpath fill='%23222222' d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'/%3e%3c/svg%3e");
+
+}
+
 /* Header Menu */
 
 header#menu {
@@ -909,6 +921,44 @@ section.rich-text.blue {
 
 /* Carousel block */
 
+section.carousel .lock {
+
+  position: relative;
+  min-height: 450px;
+
+}
+
+section.carousel .lock .row + .row {
+
+  margin: 0;
+
+}
+
+section.carousel .slides {
+
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+}
+
+section.carousel [data-slide] {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+section.carousel [data-slide][hidden] {
+
+  display: initial;
+  visibility: hidden;
+
+}
+
+
 section.carousel .yellow-border {
 
   top: 2rem;
@@ -962,7 +1012,31 @@ section.carousel .container.text .wrapper {
 
 }
 
+section.carousel .controls {
+
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 225px;
+  right: 0;
+  left: 0;
+
+}
+
+section.carousel .controls > button {
+
+  background-color: rgba(255, 255, 255, 0.65);
+  z-index: 10;
+
+}
+
 @media (min-width: 768px) {
+
+  section.carousel .slides {
+
+    overflow: hidden;
+
+  }
 
   section.carousel .yellow-border {
 
@@ -998,6 +1072,116 @@ section.carousel .container.text .wrapper {
 
     grid-column: span 3;
     margin: 0 0 0 -7rem;
+
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  section.carousel .container.image {
+
+    grid-column: 2 / span 6;
+
+  }
+
+  section.carousel .container.text {
+
+    grid-column: 8 / span 4;
+
+  }
+
+}
+
+/* Carousel block animations */
+
+.next-leaving {
+
+  animation-duration: 1s;
+  animation-name: nextLeaving;
+
+}
+
+@keyframes nextLeaving {
+
+  from {
+
+    left: 0;
+
+  }
+
+  to {
+
+    left: -100%;
+
+  }
+
+}
+
+.next-entering {
+
+  animation-duration: 1s;
+  animation-name: nextEntering;
+
+}
+
+@keyframes nextEntering {
+
+  from {
+
+    left: 100%;
+
+  }
+
+  to {
+
+    left: 0;
+
+  }
+
+}
+
+.previous-leaving {
+
+  animation-duration: 1s;
+  animation-name: previousLeaving;
+
+}
+
+@keyframes previousLeaving {
+
+  from {
+
+    right: 0;
+
+  }
+
+  to {
+
+    right: -100%;
+
+  }
+
+}
+
+.previous-entering {
+
+  animation-duration: 1s;
+  animation-name: previousEntering;
+
+}
+
+@keyframes previousEntering {
+
+  from {
+
+    right: 100%;
+
+  }
+
+  to {
+
+    right: 0;
 
   }
 

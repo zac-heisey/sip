@@ -31,8 +31,8 @@
 
     {
 
+      let headerMenu = document.querySelector('header#menu');
       let menuButtons = document.querySelectorAll('header button');
-      let headerMenu = document.querySelector('header nav');
       let breakpoint = window.matchMedia('(min-width: 576px)');
 
       // Close open menus
@@ -44,8 +44,8 @@
 
       }
 
-      // Listen for clicks on document
-      document.addEventListener('click', function(event) {
+      // Listen for clicks on header menu
+      headerMenu.addEventListener('click', function(event) {
 
         // Check if click is on a button element
         if (event.target.nodeName === 'BUTTON') {
@@ -76,7 +76,7 @@
       }, false);
 
       // Listen for keydown event on document
-      document.addEventListener('keydown', function(event) {
+      headerMenu.addEventListener('keydown', function(event) {
 
         if (event.key === 'Escape') {
 
@@ -163,6 +163,57 @@
         footer.appendChild(js);
 
       }
+
+    }
+
+    //== Carousel (class-based) ==//
+
+    {
+
+      let carousel = document.querySelector('.slides');
+      let prevButton = document.querySelector('button[name="prev"]');
+      let nextButton = document.querySelector('button[name="next"]');
+
+      // Show next slide
+      function showNextSlide(event) {
+
+        // Grab current and next slides
+        var currentSlide = document.querySelector('[data-slide]:not([hidden])');
+        var nextSlide = currentSlide.nextElementSibling || document.querySelector('[data-slide]:first-of-type');
+
+        // Add/remove necessary classes
+        nextSlide.hidden = false;
+        currentSlide.classList.add('next-leaving');
+        nextSlide.classList.add('next-entering');
+
+      };
+
+      // Show previous slide
+      function showPreviousSlide(event) {
+
+        // Grab current and previous slides
+        var currentSlide = document.querySelector('[data-slide]:not([hidden])');
+        var previousSlide = currentSlide.previousElementSibling || document.querySelector('[data-slide]:last-of-type');
+
+        // Add/remove necessary classes
+        previousSlide.hidden = false;
+        currentSlide.classList.add('previous-leaving');
+        previousSlide.classList.add('previous-entering');
+
+      };
+
+      // Listen for clicks on Prev & Next buttons
+      prevButton.addEventListener('click', showPreviousSlide, false);
+      nextButton.addEventListener('click', showNextSlide, false);
+
+      // Add/remove necessary classes after animation
+      carousel.addEventListener('animationend', function(event) {
+        if (event.target.classList.contains('next-leaving') || event.target.classList.contains('previous-leaving')) {
+          event.target.hidden = true;
+        }
+        event.target.classList.remove('next-entering', 'next-leaving', 'previous-entering', 'previous-leaving');
+
+      }, false);
 
     }
 

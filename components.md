@@ -101,6 +101,22 @@ blocks:
       source: "/v1620418245/sip/mother-child.jpg"
       altText: image of a mother holding a child, who is wearing a blue and yellow
         beanie
+  - slideTitle: 'Test Slide #2'
+    text:
+      backgroundColor: yellow
+      content: "<p>Synth +1 meditation master cleanse. Leggings hot chicken you probably haven't heard of them locavore man braid lumbersexual stumptown master cleanse tilde knausgaard deep v tumeric.</p><p>Aesthetic fashion axe glossier bitters venmo, typewriter stumptown dreamcatcher ugh activated charcoal crucifix banjo fanny pack.</p>"
+      buttons: []
+    image:
+      source: "/sip/placeholder-4.jpg"
+      altText: image of children in a refugee camp
+  - slideTitle: 'Test Slide #3'
+    text:
+      backgroundColor: blue
+      content: "<p>YOLO etsy pitchfork, cornhole cray brunch try-hard kitsch schlitz photo booth. Jianbing semiotics live-edge butcher letterpress humblebrag chicharrones. Shabby chic lomo chartreuse taiyaki four loko glossier gluten-free. Selvage dreamcatcher butcher chia kogi.</p>"
+      buttons: []
+    image:
+      source: "/sip/placeholder-2.jpg"
+      altText: image of children in a refugee camp
 
 ---
 # Heading 1 - Body Content Block
