@@ -30,11 +30,27 @@ fields:
       - blue
       source:
         type: simple
-        section: 
-        file: 
-        path: 
+        section:
+        file:
+        path:
     label: Background Color
     description: Choose a background color for your text overlay.
+  - name: overlayPosition
+    type: select
+    default: center
+    config:
+      required: false
+      options:
+      - left
+      - right
+      - center
+      source:
+        type: simple
+        section:
+        file:
+        path:
+    label: Text Overlay Position
+    description: Choose if your text overlay if positioned to the left, right, or centered.
   - name: content
     type: textarea
     default: ''
