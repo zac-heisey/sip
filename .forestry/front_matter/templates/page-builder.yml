@@ -28,6 +28,7 @@ fields:
   - grid
   - rich-text
   - carousel
+  - parallax-callout
   config:
     min: 
     max: 
