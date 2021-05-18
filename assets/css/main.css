@@ -1215,3 +1215,49 @@ section.carousel .controls > button {
   }
 
 }
+
+/* Parallax Callout block */
+
+section.parallax-callout {
+
+  background-size: cover;
+  /* background-attachment: fixed; */
+  overflow: hidden;
+
+}
+
+section.parallax-callout .text-overlay {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.65);
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+
+}
+
+section.parallax-callout .text-overlay.yellow {
+
+  background-color: rgba(254, 223, 52, 0.65);
+
+}
+
+section.parallax-callout .text-overlay.blue {
+
+  background-color: rgba(63, 171, 226, 0.65);
+
+}
+
+section.parallax-callout .text-overlay.left {
+
+  margin: 3rem 0;
+
+}
+
+section.parallax-callout .text-overlay.right {
+
+  margin: 3rem 0 3rem auto;
+
+}

@@ -1,0 +1,22 @@
+<section class="parallax-callout" style="background-image: url('{{ site.cloudinary }}{{ block.backgroundImage }}')">
+
+  <div class="lock">
+
+    <!-- Parallax callout block text overlay -->
+    <div class="text-overlay {{ block.textOverlay.overlayPosition }} {{ block.textOverlay.backgroundColor }}">
+      {{ block.textOverlay.content | safe }}
+
+      <!-- Buttons (if any) -->
+      {% if block.textOverlay.buttons.length > 0 %}
+      <div class="buttons">
+        {% for button in block.textOverlay.buttons %}
+          <a href="{{ button.url }}" class="btn {{ button.color }}">{{ button.buttonText }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</section>

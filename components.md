@@ -130,6 +130,7 @@ blocks:
   type: parallax-callout
   textOverlay:
     backgroundColor: yellow
+    overlayPosition: center
     content: "<h2>Want to get involved? SIP is always looking for volunteers, donors,
       and those interested in growing our impact.</h2>"
     buttons:
