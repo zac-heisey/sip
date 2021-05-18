@@ -126,6 +126,17 @@ blocks:
     image:
       source: "/sip/placeholder-2.jpg"
       altText: image of children in a refugee camp
+- template: parallax-callout
+  type: parallax-callout
+  textOverlay:
+    backgroundColor: yellow
+    content: "<h2>Want to get involved? SIP is always looking for volunteers, donors,
+      and those interested in growing our impact.</h2>"
+    buttons:
+    - buttonText: Learn How to Get Involved
+      color: blue
+      url: "#"
+  backgroundImage: "/v1620418548/sip/placeholder-2.jpg"
 
 ---
 # Heading 1 - Body Content Block
