@@ -765,33 +765,11 @@ section.grid .container.video {
 
 }
 
-section.grid .container.donation .widget-wrapper {
+section.grid .container.donation iframe {
 
-  background-color: var(--white);
-  margin-bottom: 1.5rem;
-  padding: 1rem 2rem;
-  border-radius: 5px;
   box-shadow: -4px 4px 15px -3px rgba(0, 0, 0, 0.25);
 
 }
-
-/**
-  Start temporary styles (remove after donation widget embed is in place)
-**/
-.widget-wrapper .buttons {
-
-  display: flex;
-
-}
-
-.widget-wrapper .buttons .btn {
-
-  width: 100%;
-
-}
-/**
-  End temporary styles
-**/
 
 @media (min-width: 768px) {
 
