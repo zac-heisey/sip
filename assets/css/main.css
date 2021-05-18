@@ -163,6 +163,14 @@ body {
 
 }
 
+/* Replace system font with custom fonts once loaded */
+
+.fonts-loaded body {
+
+  font-family: var(--nunito-sans);
+
+}
+
 h1, h2, h3 {
 
   font-weight: 700;
@@ -242,14 +250,6 @@ pre {
 
 }
 
-/* Replace system font with custom fonts once loaded */
-
-.fonts-loaded body {
-
-  font-family: var(--nunito-sans);
-
-}
-
 /* Buttons */
 
 button {
@@ -277,19 +277,20 @@ button {
 
 }
 
-.btn.blue:hover, .btn.blue:focus,
-.btn.white:hover, .btn.white:focus {
-
-  background-color: #2c789e;
-  transition: background-color 0.1s;
-
-}
-
 .btn.white {
 
   color: var(--blue);
   background-color: var(--white);
   border: 2px solid var(--blue);
+
+}
+
+
+.btn.blue:hover, .btn.blue:focus,
+.btn.white:hover, .btn.white:focus {
+
+  background-color: #2c789e;
+  transition: background-color 0.1s;
 
 }
 
