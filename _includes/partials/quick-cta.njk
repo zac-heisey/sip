@@ -1,0 +1,26 @@
+<section class="quick-cta{% if block.backgroundColor != "none" %} {{ block.backgroundColor }}{% endif %}">
+
+    <div class="lock">
+
+      <h2>{{ block.headline }}</h2>
+
+      <form action="index.html" method="post">
+
+        <input type="text" name="Name" placeholder="Full Name" required>
+
+        <input type="email" name="Email" placeholder="Email Address" required>
+
+        <!-- Buttons (if any) -->
+        {% if block.buttons.length > 0 %}
+        <div class="buttons">
+          {% for button in block.buttons %}
+            <button class="btn {{ button.color }}">{{ button.buttonText }}</button>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+      </form>
+
+    </div>
+
+  </section>
