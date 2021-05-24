@@ -1,4 +1,10 @@
 ---
 label: Quick CTA
 hide_body: true
-fields: []
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  default: quick-cta
