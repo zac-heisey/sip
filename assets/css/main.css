@@ -1267,8 +1267,11 @@ section.parallax-callout .text-overlay.right {
 
 section.quick-cta {
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  overflow: hidden;
+  min-height: 250px;
 
 }
 
