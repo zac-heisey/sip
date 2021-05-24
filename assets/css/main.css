@@ -57,9 +57,7 @@
 
 }
 
-/*== Global Styles ==*/
-
-/* Resets */
+/*== Resets ==*/
 
 /* Universal box sizing > includes padding and border,
 but NOT margin, in total box size */
@@ -141,7 +139,7 @@ button, input {
 
 }
 
-/*== Common Styles ==*/
+/*== Global Styles ==*/
 
 /* Set default scroll behavior */
 
@@ -533,9 +531,68 @@ header#menu nav button[aria-expanded="true"] + ul {
 
 footer {
 
+  background-color: var(--light-gray);
   width: 100%;
   height: auto;
   margin: 0 auto;
+
+}
+
+footer .lock {
+
+  margin-top: -2rem;
+  padding: 2rem 0;
+
+}
+
+footer .column:nth-of-type(2) {
+
+  padding: 1rem 0;
+
+}
+
+footer a.logo img {
+
+  max-width: 177px;
+  margin: 0;
+
+}
+
+footer h3 {
+
+  margin: 0;
+
+}
+
+footer p {
+
+  font-size: 14px;
+
+}
+
+footer address {
+
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+footer address p {
+
+  margin: 0;
+
+}
+
+@media (min-width: 768px) {
+
+  footer .lock {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
 
 }
 
@@ -1265,13 +1322,10 @@ section.parallax-callout .text-overlay.right {
 
 /* Quick CTA block */
 
-section.quick-cta {
+section.quick-cta .lock {
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  min-height: 250px;
+  padding: 2rem 0;
 
 }
 
