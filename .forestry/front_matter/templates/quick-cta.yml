@@ -8,3 +8,31 @@ fields:
     required: false
   label: type
   default: quick-cta
+- name: backgroundColor
+  type: select
+  default: blue
+  config:
+    required: false
+    options:
+    - blue
+    - yellow
+    - none
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Color
+  description: Select a background color for your quick CTA block.
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
+  description: Add a headline to your quick CTA block.
+- name: buttons
+  type: include
+  config: {}
+  template: buttons
+  label: Buttons
+  description: Add a button to your quick CTA section.
