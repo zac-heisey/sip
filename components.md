@@ -138,6 +138,14 @@ blocks:
       color: blue
       url: "#"
   backgroundImage: "/v1620418548/sip/placeholder-2.jpg"
+- template: quick-cta
+  type: quick-cta
+  backgroundColor: blue
+  headline: Sign Up for News, Updates, and More from SIP
+  buttons:
+  - buttonText: Get SIP Updates
+    color: yellow
+    url: ''
 
 ---
 # Heading 1 - Body Content Block
