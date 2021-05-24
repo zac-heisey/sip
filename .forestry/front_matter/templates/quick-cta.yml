@@ -8,6 +8,7 @@ fields:
     required: false
   label: type
   default: quick-cta
+  hidden: true
 - name: backgroundColor
   type: select
   default: blue
