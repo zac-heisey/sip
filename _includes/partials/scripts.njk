@@ -170,50 +170,68 @@
 
     {
 
-      let carousel = document.querySelector('.slides');
-      let prevButton = document.querySelector('button[name="prev"]');
-      let nextButton = document.querySelector('button[name="next"]');
+      // Check for carousel on page
+      if (document.querySelector('.carousel')) {
 
-      // Show next slide
-      function showNextSlide(event) {
+        // Grab and loop through all carousels on page
+        let carousels = Array.from(document.querySelectorAll('.carousel'));
 
-        // Grab current and next slides
-        var currentSlide = document.querySelector('[data-slide]:not([hidden])');
-        var nextSlide = currentSlide.nextElementSibling || document.querySelector('[data-slide]:first-of-type');
+        for (carousel of carousels) {
 
-        // Add/remove necessary classes
-        nextSlide.hidden = false;
-        currentSlide.classList.add('next-leaving');
-        nextSlide.classList.add('next-entering');
+          let slides = carousel.querySelector('.slides');
+          let prevButton = carousel.querySelector('button[name="prev"]');
+          let nextButton = carousel.querySelector('button[name="next"]');
 
-      };
+          // Show next slide
+          function showNextSlide(event) {
 
-      // Show previous slide
-      function showPreviousSlide(event) {
+            // Grab current carousel being targeted
+            let currentCarousel = event.target.closest('.carousel');
 
-        // Grab current and previous slides
-        var currentSlide = document.querySelector('[data-slide]:not([hidden])');
-        var previousSlide = currentSlide.previousElementSibling || document.querySelector('[data-slide]:last-of-type');
+            // Grab current and next slides
+            var currentSlide = currentCarousel.querySelector('[data-slide]:not([hidden])');
+            var nextSlide = currentSlide.nextElementSibling || currentCarousel.querySelector('[data-slide]:first-of-type');
 
-        // Add/remove necessary classes
-        previousSlide.hidden = false;
-        currentSlide.classList.add('previous-leaving');
-        previousSlide.classList.add('previous-entering');
+            // Add/remove necessary classes
+            nextSlide.hidden = false;
+            currentSlide.classList.add('next-leaving');
+            nextSlide.classList.add('next-entering');
 
-      };
+          };
 
-      // Listen for clicks on Prev & Next buttons
-      prevButton.addEventListener('click', showPreviousSlide, false);
-      nextButton.addEventListener('click', showNextSlide, false);
+          // Show previous slide
+          function showPreviousSlide(event) {
 
-      // Add/remove necessary classes after animation
-      carousel.addEventListener('animationend', function(event) {
-        if (event.target.classList.contains('next-leaving') || event.target.classList.contains('previous-leaving')) {
-          event.target.hidden = true;
+            // Grab current carousel being targeted
+            let currentCarousel = event.target.closest('.carousel');
+
+            // Grab current and previous slides
+            var currentSlide = currentCarousel.querySelector('[data-slide]:not([hidden])');
+            var previousSlide = currentSlide.previousElementSibling || currentCarousel.querySelector('[data-slide]:last-of-type');
+
+            // Add/remove necessary classes
+            previousSlide.hidden = false;
+            currentSlide.classList.add('previous-leaving');
+            previousSlide.classList.add('previous-entering');
+
+          };
+
+          // Listen for clicks on Prev & Next buttons
+          prevButton.addEventListener('click', showPreviousSlide, false);
+          nextButton.addEventListener('click', showNextSlide, false);
+
+          // Add/remove necessary classes after animation
+          slides.addEventListener('animationend', function(event) {
+            if (event.target.classList.contains('next-leaving') || event.target.classList.contains('previous-leaving')) {
+              event.target.hidden = true;
+            }
+            event.target.classList.remove('next-entering', 'next-leaving', 'previous-entering', 'previous-leaving');
+
+          }, false);
+
         }
-        event.target.classList.remove('next-entering', 'next-leaving', 'previous-entering', 'previous-leaving');
 
-      }, false);
+      }
 
     }
 
