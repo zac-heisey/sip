@@ -37,9 +37,12 @@
 
       // Close open menus
       function closeOpenMenus() {
+
         // Loop through buttons and set aria-expanded to false
         for (button of menuButtons) {
+
           button.setAttribute('aria-expanded', 'false');
+
         }
 
       }
@@ -90,7 +93,8 @@
           // Otherwise, close the nearest open menu
           else {
 
-            var nearestOpen = event.target.closest('ul').previousElementSibling;
+            let nearestOpen = event.target.closest('ul').previousElementSibling;
+
             if (nearestOpen && nearestOpen.getAttribute('aria-expanded') === 'true') {
 
               nearestOpen.setAttribute('aria-expanded', 'false');
@@ -116,7 +120,7 @@
 
         if (breakpoint.matches) {
 
-          var parent = event.target.closest('header nav > ul > li');
+          let parent = event.target.closest('header nav > ul > li');
 
           if (parent && !parent.contains(event.relatedTarget)) {
 
@@ -145,7 +149,7 @@
 
     {
 
-      // If there are videos on the page, append lite-youtube-embed script to footer and styles to head
+      // If there are videos on the page...
       if (document.querySelector('lite-youtube')) {
 
         let head = document.querySelector('head');
@@ -153,13 +157,14 @@
         let css = document.createElement('link');
         let js = document.createElement('script');
 
+        // Append lite-youtube-embed styles to head
         css.rel = 'stylesheet';
         css.href = '/assets/css/lite-youtube-embed.css';
+        head.appendChild(css);
 
+        // Append lite-youtube-embed script to footer
         js.type = 'text/javascript';
         js.src = '/assets/js/lite-youtube-embed.js';
-
-        head.appendChild(css);
         footer.appendChild(js);
 
       }
@@ -170,66 +175,71 @@
 
     {
 
-      // Check for carousel on page
+      // Check for carousel(s) on page
       if (document.querySelector('.carousel')) {
 
-        // Grab and loop through all carousels on page
-        let carousels = Array.from(document.querySelectorAll('.carousel'));
+        // Show next slide
+        function showNextSlide(currentCarousel) {
 
-        for (carousel of carousels) {
+          // Grab current and next slides
+          let currentSlide = currentCarousel.querySelector('[data-slide]:not([hidden])');
+          let nextSlide = currentSlide.nextElementSibling || currentCarousel.querySelector('[data-slide]:first-of-type');
 
-          let slides = carousel.querySelector('.slides');
-          let prevButton = carousel.querySelector('button[name="prev"]');
-          let nextButton = carousel.querySelector('button[name="next"]');
+          // Add/remove necessary classes
+          nextSlide.hidden = false;
+          currentSlide.classList.add('next-leaving');
+          nextSlide.classList.add('next-entering');
 
-          // Show next slide
-          function showNextSlide(event) {
+        };
 
-            // Grab current carousel being targeted
-            let currentCarousel = event.target.closest('.carousel');
+        // Show previous slide
+        function showPreviousSlide(currentCarousel) {
 
-            // Grab current and next slides
-            var currentSlide = currentCarousel.querySelector('[data-slide]:not([hidden])');
-            var nextSlide = currentSlide.nextElementSibling || currentCarousel.querySelector('[data-slide]:first-of-type');
+          // Grab current and previous slides
+          let currentSlide = currentCarousel.querySelector('[data-slide]:not([hidden])');
+          let previousSlide = currentSlide.previousElementSibling || currentCarousel.querySelector('[data-slide]:last-of-type');
 
-            // Add/remove necessary classes
-            nextSlide.hidden = false;
-            currentSlide.classList.add('next-leaving');
-            nextSlide.classList.add('next-entering');
+          // Add/remove necessary classes
+          previousSlide.hidden = false;
+          currentSlide.classList.add('previous-leaving');
+          previousSlide.classList.add('previous-entering');
 
-          };
+        };
 
-          // Show previous slide
-          function showPreviousSlide(event) {
+        // Listen for clicks on document
+        document.addEventListener('click', function(event) {
 
-            // Grab current carousel being targeted
-            let currentCarousel = event.target.closest('.carousel');
+          // Grab current carousel being targeted
+          let currentCarousel = event.target.closest('.carousel');
 
-            // Grab current and previous slides
-            var currentSlide = currentCarousel.querySelector('[data-slide]:not([hidden])');
-            var previousSlide = currentSlide.previousElementSibling || currentCarousel.querySelector('[data-slide]:last-of-type');
+          // If click is on previous button, show previous slide
+          if (event.target.matches('button[name="prev"]')) {
 
-            // Add/remove necessary classes
-            previousSlide.hidden = false;
-            currentSlide.classList.add('previous-leaving');
-            previousSlide.classList.add('previous-entering');
+            showPreviousSlide(currentCarousel);
 
-          };
+          }
 
-          // Listen for clicks on Prev & Next buttons
-          prevButton.addEventListener('click', showPreviousSlide, false);
-          nextButton.addEventListener('click', showNextSlide, false);
+          // If click is on next button, show next slide
+          if (event.target.matches('button[name="next"]')) {
 
-          // Add/remove necessary classes after animation
-          slides.addEventListener('animationend', function(event) {
-            if (event.target.classList.contains('next-leaving') || event.target.classList.contains('previous-leaving')) {
-              event.target.hidden = true;
-            }
-            event.target.classList.remove('next-entering', 'next-leaving', 'previous-entering', 'previous-leaving');
+            showNextSlide(currentCarousel);
 
-          }, false);
+          }
 
-        }
+        }, false);
+
+        // Add/remove necessary classes after animation
+        document.addEventListener('animationend', function(event) {
+
+          if (event.target.classList.contains('next-leaving') || event.target.classList.contains('previous-leaving')) {
+
+            event.target.hidden = true;
+
+          }
+
+          event.target.classList.remove('next-entering', 'next-leaving', 'previous-entering', 'previous-leaving');
+
+        }, false);
 
       }
 
