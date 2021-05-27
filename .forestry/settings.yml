@@ -5,6 +5,13 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: programs
+  label: Programs
+  create: documents
+  match: "**/*"
+  templates:
+  - page-builder
+- type: directory
   path: _data
   label: Data
   create: none
