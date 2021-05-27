@@ -1,0 +1,17 @@
+---
+label: Nav Menu Items
+hide_body: true
+fields:
+- type: field_group_list
+  name: Nav
+  label: Nav
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: url
+    label: url
+  - type: list
+    name: submenu
+    label: submenu
