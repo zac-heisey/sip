@@ -3,7 +3,7 @@
   {
 
     "name": "About",
-    "url": "#",
+    "url": "/#",
     "submenu": []
 
   },
@@ -17,14 +17,7 @@
       {
 
         "name": "Program 1",
-        "url": "#"
-
-      },
-
-      {
-
-        "name": "Program 2",
-        "url": "#"
+        "url": "/programs/program-1"
 
       }
 
@@ -41,22 +34,22 @@
       {
 
         "name": "Donate",
-        "url": "#"
+        "url": "/#"
 
       },
 
       {
 
         "name": "Volunteer",
-        "url": "#"
+        "url": "/#"
 
       },
 
       {
 
         "name": "Contact",
-        "url": "#"
-        
+        "url": "/#"
+
       }
 
     ]
