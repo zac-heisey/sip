@@ -22,12 +22,16 @@
 
     <div class="column">
       <div class="buttons">
-        <a href="#" class="btn blue">Donate</a>
+        <a href="https://donorbox.org/website-donations-175" class="btn blue custom-dbox-popup">Donate</a>
         <a href="#" class="btn white">Volunteer</a>
       </div>
     </div>
 
   </div>
+
+  <!-- Donorbox Popup Scripts -->
+  <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
+  <script>window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' }</script>
 
   <!-- Inline Scripts -->
   {% include "partials/scripts.njk" %}
