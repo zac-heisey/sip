@@ -2,13 +2,8 @@
   "navItems": [
     {
       "name": "About",
-      "url": "#",
-      "submenu": [
-        {
-          "name": "DELETE ME TOO!!",
-          "url": ""
-        }
-      ]
+      "url": "",
+      "submenu": []
     },
     {
       "name": "Programs",
@@ -35,10 +30,6 @@
         {
           "name": "Contact",
           "url": "/#"
-        },
-        {
-          "name": "DELETE ME!!",
-          "url": ""
         }
       ]
     }
