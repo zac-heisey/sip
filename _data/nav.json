@@ -4,7 +4,10 @@
       "name": "About",
       "url": "#",
       "submenu": [
-
+        {
+          "name": "DELETE ME TOO!!",
+          "url": ""
+        }
       ]
     },
     {
@@ -32,6 +35,10 @@
         {
           "name": "Contact",
           "url": "/#"
+        },
+        {
+          "name": "DELETE ME!!",
+          "url": ""
         }
       ]
     }
