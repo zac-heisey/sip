@@ -4,13 +4,10 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
-- type: heading
-  label: Testing 123
 - type: directory
   path: _data
   label: Data
   create: none
-  match: "**/*"
   new_doc_ext: json
   templates:
   - nav-menu-items
