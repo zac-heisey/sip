@@ -16,7 +16,7 @@
     <nav id="main-menu">
       <!-- Primary Nav Items -->
       <ul class="primary-nav-items">
-        {% for link in nav %}
+        {% for link in nav.navItems %}
         <li>
           {% if link.submenu.length > 0 %}
           <button aria-expanded="false">{{ link.name }}</button>

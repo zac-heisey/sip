@@ -1,25 +1,39 @@
 {
   "navItems": [
     {
-      "name": "Test Item 1",
+      "name": "About",
       "url": "#",
       "submenu": [
 
       ]
     },
     {
+      "name": "Programs",
       "url": "#",
       "submenu": [
         {
-          "name": "Subitem 1",
-          "url": "#"
+          "name": "Program 1",
+          "url": "/programs/program-1"
+        }
+      ]
+    },
+    {
+      "name": "Get Involved",
+      "url": "#",
+      "submenu": [
+        {
+          "name": "Donate",
+          "url": "/#"
         },
         {
-          "name": "Subitem 2",
-          "url": "#"
+          "name": "Volunteer",
+          "url": "/#"
+        },
+        {
+          "name": "Contact",
+          "url": "/#"
         }
-      ],
-      "name": "Test Item 2"
+      ]
     }
   ]
 }
