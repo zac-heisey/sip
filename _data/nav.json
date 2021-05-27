@@ -1,0 +1,25 @@
+{
+  "navItems": [
+    {
+      "name": "Test Item 1",
+      "url": "#",
+      "submenu": [
+
+      ]
+    },
+    {
+      "url": "#",
+      "submenu": [
+        {
+          "name": "Subitem 1",
+          "url": "#"
+        },
+        {
+          "name": "Subitem 2",
+          "url": "#"
+        }
+      ],
+      "name": "Test Item 2"
+    }
+  ]
+}
