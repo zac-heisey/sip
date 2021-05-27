@@ -35,3 +35,5 @@ fields:
       labelField: 
     label: Submenu
     description: Add submenu items to this nav menu item.
+pages:
+- _data/nav.json
