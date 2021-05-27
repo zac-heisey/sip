@@ -25,6 +25,8 @@ sections:
   label: Posts
   create: documents
   match: "**/*"
+  templates:
+  - page-builder
 upload_dir: sip
 public_path: https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto
 front_matter_path: ''
