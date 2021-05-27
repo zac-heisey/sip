@@ -3,15 +3,35 @@ label: Nav Menu Items
 hide_body: true
 fields:
 - type: field_group_list
-  name: Nav
-  label: Nav
+  name: navItems
+  label: Nav Items
   fields:
   - type: text
     name: name
-    label: name
+    label: Name
+    description: Add a name for your nav menu item.
   - type: text
     name: url
-    label: url
-  - type: list
-    name: submenu
-    label: submenu
+    label: URL
+    description: Enter the relative URL for your nav menu item.
+  - name: submenu
+    type: field_group_list
+    fields:
+    - name: name
+      type: text
+      config:
+        required: false
+      label: Name
+      description: Add a name for your submenu item.
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+      description: Enter the relative URL for your submenu item.
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Submenu
+    description: Add submenu items to this nav menu item.
