@@ -1,0 +1,62 @@
+<section class="grid posts-list">
+
+  <div class="lock">
+
+    {% for post in posts | reverse %}
+
+      {% if loop.first %}
+
+      <!-- Featured post -->
+      <div class="row item-2">
+
+        <div class="container text">
+          <h2>{{ post.data.title }}</h2>
+          {{ post.templateContent | truncate(400) | safe }}
+
+          <div class="buttons">
+            <a href="{{ post.url }}" class="btn blue">Read Full Article</a>
+          </div>
+        </div>
+
+        <div class="container image">
+          <div class="yellow-border"></div>
+          {{ macro.imageSizes(post.data.blocks[0].image.source, post.data.blocks[0].image.altText) }}
+        </div>
+
+      </div>
+
+      {% endif %}
+
+    {% endfor %}
+
+    <!-- Other posts -->
+    <div class="row item-3">
+
+    {% for post in posts | reverse %}
+
+      {% if not loop.first %}
+
+      <div class="container">
+        {{ macro.imageSizes(post.data.blocks[0].image.source, post.data.blocks[0].image.altText) }}
+        <h3>{{ post.data.title }}</h3>
+        {{ post.templateContent | truncate(200) | safe }}
+        <p><a href="{{ post.url }}">Read Full Article</a></p>
+      </div>
+
+      {% endif %}
+
+    {% endfor %}
+
+    </div>
+
+
+    {% if pagination.href.previous %}
+      <a href="{{pagination.href.previous}}">Previous Page</a>
+    {% endif %}
+    {% if pagination.href.next %}
+      <a href="{{pagination.href.next}}">Next Page</a>
+    {% endif %}
+
+  </div>
+
+</section>

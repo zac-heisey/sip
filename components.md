@@ -10,7 +10,7 @@ blocks:
     vulnerable members.
   subHeading: "- Mahatma Gandhi"
   image:
-    source: https://images.unsplash.com/photo-1530490125459-847a6d437825?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1363&q=80
+    source: /sip/mother-child.jpg
     altText: This is some sample alt text for the image
   buttons:
   - buttonText: Learn More

@@ -7,7 +7,7 @@
       <!-- Hero block image -->
       <div class="container image">
         <div class="yellow-border"></div>
-        <img src="{{ block.image.source }}" alt="{{ block.image.altText }}">
+        {{ macro.imageSizes(block.image.source, block.image.altText) }}
       </div>
 
       <!-- Hero block text -->

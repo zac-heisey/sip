@@ -1366,3 +1366,19 @@ section.quick-cta form {
   }
 
 }
+
+/* Posts List block */
+
+section.posts-list .row.item-3 > .container {
+  
+  grid-row: auto;
+  grid-column: span 4;
+
+}
+
+section.posts-list .row.item-3 img {
+
+  height: 250px;
+  object-fit: cover;
+
+}
