@@ -1,4 +1,11 @@
 ---
 label: Posts List
 hide_body: true
-fields: []
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
+  default: posts-list
