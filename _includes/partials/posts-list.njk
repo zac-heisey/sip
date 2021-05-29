@@ -2,9 +2,11 @@
 
   <div class="lock">
 
-    {% for post in posts | reverse %}
+    {% set allPosts = collections.posts | reverse %}
 
-      {% if loop.first %}
+    {% for post in posts %}
+
+      {% if post == allPosts[0] %}
 
       <!-- Featured post -->
       <div class="row item-2">
@@ -32,9 +34,9 @@
     <!-- Other posts -->
     <div class="row item-3">
 
-    {% for post in posts | reverse %}
+    {% for post in posts %}
 
-      {% if not loop.first %}
+      {% if post !== allPosts[0] %}
 
       <div class="container">
         {{ macro.imageSizes(post.data.blocks[0].image.source, post.data.blocks[0].image.altText) }}
@@ -49,13 +51,23 @@
 
     </div>
 
+    <nav class="post-pagination">
+      {% if pagination.href.next %}
+      <!-- Older posts -->
+      <a href="{{pagination.href.next}}">
+        <span class="icon-left-arrow" type="button" name="prev" aria-label="Left Arrow"></span>
+        Older Posts
+      </a>
+      {% endif %}
 
-    {% if pagination.href.previous %}
-      <a href="{{pagination.href.previous}}">Previous Page</a>
-    {% endif %}
-    {% if pagination.href.next %}
-      <a href="{{pagination.href.next}}">Next Page</a>
-    {% endif %}
+      {% if pagination.href.previous %}
+      <!-- Newer posts -->
+      <a href="{{pagination.href.previous}}">
+        Newer Posts
+        <span class="icon-right-arrow" type="button" name="next" aria-label="Right Arrow"></span>
+      </a>
+      {% endif %}
+    </nav>
 
   </div>
 

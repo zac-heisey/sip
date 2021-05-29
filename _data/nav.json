@@ -2,8 +2,13 @@
   "navItems": [
     {
       "name": "About",
-      "url": "#",
-      "submenu": []
+      "url": "",
+      "submenu": [
+        {
+          "name": "News",
+          "url": "/news"
+        }
+      ]
     },
     {
       "name": "Programs",

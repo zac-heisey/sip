@@ -6,6 +6,7 @@ pagination:
   data: collections.posts
   size: 4
   alias: posts
+  reverse: true
 blocks:
 - template: posts-list
   type: posts-list

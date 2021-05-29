@@ -842,6 +842,9 @@ section.grid .container.image img {
 
 section.grid .container.text {
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-row: 2;
 
 }
@@ -1369,8 +1372,14 @@ section.quick-cta form {
 
 /* Posts List block */
 
+section.posts-list .row.item-3 {
+
+  margin: 2rem 0;
+
+}
+
 section.posts-list .row.item-3 > .container {
-  
+
   grid-row: auto;
   grid-column: span 4;
 
@@ -1380,5 +1389,12 @@ section.posts-list .row.item-3 img {
 
   height: 250px;
   object-fit: cover;
+
+}
+
+section.posts-list .post-pagination {
+
+  display: flex;
+  justify-content: space-between;
 
 }
