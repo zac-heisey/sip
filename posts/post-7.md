@@ -1,15 +1,15 @@
 ---
 layout: layouts/blocks.njk
-title: Test Blog Post 3
+title: Test Blog Post 7
 description: This page is a test blog post
 tags: posts
 blocks:
 - template: hero
   type: hero
-  heading: Test Blog Post 3
+  heading: Test Blog Post 7
   subHeading:
   image:
-    source: /sip/placeholder-3.jpg
+    source: /sip/placeholder-1.jpg
     altText: This is some sample alt text for the image
   buttons: []
 - template: body-content

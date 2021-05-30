@@ -4,39 +4,33 @@
 
     {% set allPosts = collections.posts | reverse %}
 
-    {% for post in posts %}
+    {% if page.url === '/news/' %}
 
-      {% if post == allPosts[0] %}
-
-      <!-- Featured post -->
+    <!-- Featured post -->
       <div class="row item-2">
 
         <div class="container text">
-          <h2>{{ post.data.title }}</h2>
-          {{ post.templateContent | truncate(400) | safe }}
+          <h2>{{ allPosts[0].data.title }}</h2>
+          {{ allPosts[0].templateContent | truncate(400) | safe }}
 
           <div class="buttons">
-            <a href="{{ post.url }}" class="btn blue">Read Full Article</a>
+            <a href="{{ allPosts[0].url }}" class="btn blue">Read Full Article</a>
           </div>
         </div>
 
         <div class="container image">
           <div class="yellow-border"></div>
-          {{ macro.imageSizes(post.data.blocks[0].image.source, post.data.blocks[0].image.altText) }}
+          {{ macro.imageSizes(allPosts[0].data.blocks[0].image.source, allPosts[0].data.blocks[0].image.altText) }}
         </div>
 
       </div>
 
-      {% endif %}
-
-    {% endfor %}
+    {% endif %}
 
     <!-- Other posts -->
     <div class="row item-3">
 
     {% for post in posts %}
-
-      {% if post !== allPosts[0] %}
 
       <div class="container">
         {{ macro.imageSizes(post.data.blocks[0].image.source, post.data.blocks[0].image.altText) }}
@@ -45,28 +39,28 @@
         <p><a href="{{ post.url }}">Read Full Article</a></p>
       </div>
 
-      {% endif %}
-
     {% endfor %}
 
     </div>
 
     <nav class="post-pagination">
-      {% if pagination.href.next %}
+
+    {% if pagination.href.next %}
       <!-- Older posts -->
       <a href="{{pagination.href.next}}">
         <span class="icon-left-arrow" type="button" name="prev" aria-label="Left Arrow"></span>
         Older Posts
       </a>
-      {% endif %}
+    {% endif %}
 
-      {% if pagination.href.previous %}
+    {% if pagination.href.previous %}
       <!-- Newer posts -->
       <a href="{{pagination.href.previous}}">
         Newer Posts
         <span class="icon-right-arrow" type="button" name="next" aria-label="Right Arrow"></span>
       </a>
-      {% endif %}
+    {% endif %}
+    
     </nav>
 
   </div>
