@@ -17,7 +17,7 @@ sections:
   label: Pages
   create: documents
   match: "*.md"
-  exclude: "{README.md}"
+  exclude: "{README.md,news.md}"
   templates:
   - page-builder
 - type: directory
