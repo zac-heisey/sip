@@ -10,8 +10,6 @@ sections:
   create: none
   match: "**/*"
   new_doc_ext: json
-  templates:
-  - nav-menu-items
 - type: directory
   path: ''
   label: Pages
