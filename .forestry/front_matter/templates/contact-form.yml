@@ -1,0 +1,11 @@
+---
+label: Contact Form
+hide_body: true
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
+  default: contact-form

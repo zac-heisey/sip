@@ -312,10 +312,18 @@ button {
 
 }
 
+.hidden {
+
+  display: none;
+  visibility: hidden;
+
+}
+
 /* Forms */
 
-input {
+input, select, textarea {
 
+  display: block;
   font-family: var(--nunito-sans);
   font-size: 1.125rem;
   line-height: 1.65;
@@ -324,6 +332,14 @@ input {
   padding: 0.25rem 1rem;
   border: 2px solid var(--light-gray);
   border-radius: 5px;
+
+}
+
+input[type="checkbox"] {
+
+  appearance: auto;
+  -moz-appearance: auto;
+  -webkit-appearance: auto;
 
 }
 
@@ -1365,6 +1381,63 @@ section.quick-cta form {
   section.quick-cta form {
 
     justify-content: center;
+
+  }
+
+}
+
+/* Contact Form block */
+
+section.contact-form form label,
+section.contact-form form .label {
+
+  display: inline;
+  margin: 0.25rem;
+
+}
+
+section.contact-form form input,
+section.contact-form form select,
+section.contact-form form textarea {
+
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+}
+
+section.contact-form form textarea {
+
+  min-height: 140px;
+
+}
+
+section.contact-form form .checkboxes {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+section.contact-form form input[type="checkbox"] {
+
+  display: inline-block;
+  width: auto;
+  margin: 0.25rem;
+
+}
+
+@media (min-width: 576px) {
+
+  section.contact-form form .wrapper {
+
+    display: flex;
+
+  }
+
+  section.contact-form form .wrapper .column {
+
+    width: 50%;
+    padding: 1rem;
 
   }
 

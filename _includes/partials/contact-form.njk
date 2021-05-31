@@ -1,0 +1,73 @@
+<section class="contact-form">
+
+  <div class="lock">
+
+    <form name="Contact Form" action="/thank-you/" method="post" data-netlify-recaptcha="true" data-netlify="true">
+
+      <!-- Netlify honeypot field -->
+      <p class='hidden'><label>Don’t fill this out: <input name='surname'></label></p>
+
+      <div class="wrapper">
+
+        <!-- Standard form fields -->
+        <div class="column">
+          <label>First Name
+            <input id="first-name" name='first name' placeholder='First Name' type='text' required>
+          </label>
+
+          <label>Phone Number
+            <input name='phone' placeholder='Phone Number' type='tel' required>
+          </label>
+
+          <p class="label">I'm interested in...</p>
+          <div class="checkboxes">
+            <label>
+              <input type="checkbox" name="volunteering">
+              Volunteering with SIP
+            </label>
+
+            <label>
+              <input type="checkbox" name="donating">
+              Donating to SIP
+            </label>
+
+            <label>
+              <input type="checkbox" name="learning">
+              Learning more absolute SIP
+            </label>
+
+            <label>
+              <input type="checkbox" name="other">
+              Something else
+            </label>
+          </div>
+        </div>
+
+        <div class="column">
+          <label>Last Name
+            <input id="last-name" name='last name' placeholder='Last Name' type='text' required>
+          </label>
+
+          <label>Email Address
+            <input name='email' placeholder='Email Address' type='email' required>
+          </label>
+
+          <label>Anything else to add?
+            <textarea name='message'></textarea>
+          </label>
+
+          <!-- Netlify reCAPTCHA 2 -->
+          <div data-netlify-recaptcha="true"></div>
+
+          <div class="buttons">
+            <button class="btn blue">Contact SIP</button>
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
