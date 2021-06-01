@@ -17,29 +17,28 @@ blocks:
   - buttonText: Learn More About SIP
     color: blue
     url: "/mission-vision/"
+- template: rich-text
+  type: rich-text
+  backgroundColor: none
+  content: "<h1>Welcome to the Secure Information Project</h1><p>Secure Information Project (SIP) exists to document and information security for vulnerable families, new immigrants, refugees, and asylum-seekers in the United States<br><br>Gentrify lumbersexual direct trade everyday carry pabst kogi. Schlitz letterpress 3 wolf moon, mixtape vegan everyday carry retro. Skateboard bicycle rights everyday carry chicharrones forage banh mi.</p>"
 - template: grid
   type: grid
   gridRows:
-  - row: Text + Donation Widget
+  - row: Image + Donation Widget
     gridItems:
-    - itemType: text
+    - item: Image
+      itemType: image
       text:
-        content: "<h1>Welcome to the Secure Information Project</h1><p>Secure Information
-          Project (SIP) exists to document and information security for vulnerable
-          families, new immigrants, refugees, and asylum-seekers in the United States<br><br>Gentrify
-          lumbersexual direct trade everyday carry pabst kogi. Schlitz letterpress
-          3 wolf moon, mixtape vegan everyday carry retro. Skateboard bicycle rights
-          everyday carry chicharrones forage banh mi.</p>"
+        content: ''
         buttons: []
       image:
-        source: ''
-        altText: ''
+        source: "/v1620418548/sip/placeholder-4.jpg"
+        altText: some alt text describing the image
       video:
         videoCoverImage: ''
         videoId: ''
-      item: Text Item
     - item: Donation Widget (DonorBox)
-      itemType: donation-widget
+      itemType: donation
       text:
         content: ''
         buttons: []

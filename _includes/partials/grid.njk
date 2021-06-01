@@ -48,11 +48,10 @@
 
         {% endif %}
 
-        {% if item.itemType == "donationWidget" %}
+        {% if item.itemType == "donation" %}
 
         <!-- Donation widget grid item -->
         <div class="container donation">
-          <h2>{{ item.donationWidget.heading }}</h2>
           <!-- Donorbox embed -->
           <script defer src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/website-donations-175" style="max-width: 425px; min-width: 250px; max-height:470px!important" width="100%" loading="lazy"></iframe>
         </div>

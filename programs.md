@@ -16,6 +16,6 @@ blocks:
   type: body-content
 
 ---
-## Our Programs and Services
+## SIP Programs and Services
 
 More info to come!

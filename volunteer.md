@@ -7,7 +7,7 @@ description: Secure Information Projects welcomes volunteers from all background
 blocks:
 - template: hero
   type: hero
-  heading: Mor wurds of inzperayshun and kering wil geaux rite heer.
+  heading: Mor wurds of inzperayshun and kerring wil geaux rite heer.
   subHeading: "- Zoo-Lan-DUR"
   image:
     source: "/v1620418548/sip/placeholder-4.jpg"
@@ -23,7 +23,7 @@ blocks:
     - item: Role / Title 1
       itemType: text
       text:
-        content: "<p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
+        content: "<h3>Role / Title 1</h3><p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
           forage four dollar toast retro drinking vinegar tilde 8-bit distillery.</p>"
         buttons: []
       image:
@@ -35,7 +35,7 @@ blocks:
     - item: Role / Title 2
       itemType: text
       text:
-        content: "<p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
+        content: "<h3>Role / Title 2</h3><p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
           forage four dollar toast retro drinking vinegar tilde 8-bit distillery.</p>"
         buttons: []
       image:
@@ -47,7 +47,7 @@ blocks:
     - item: Role / Title 3
       itemType: text
       text:
-        content: "<p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
+        content: "<h3>Role / Title 3</h3><p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
           forage four dollar toast retro drinking vinegar tilde 8-bit distillery.</p>"
         buttons: []
       image:

@@ -53,7 +53,7 @@ blocks:
       video:
         videoCoverImage: ''
         videoId: ''
-  - row: Video
+  - row: Video + Donation Widget
     gridItems:
     - item: Video
       itemType: video
@@ -67,7 +67,7 @@ blocks:
         videoCoverImage: ''
         videoId: 15VU_mbcrB0
     - item: Donation Widget
-      itemType: donationWidget
+      itemType: donation
       text:
         content: ''
         buttons: []
@@ -77,8 +77,6 @@ blocks:
       video:
         videoCoverImage: ''
         videoId: ''
-      donationWidget:
-        heading: Give to SIP
 - template: rich-text
   type: rich-text
   content: |-

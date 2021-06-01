@@ -32,7 +32,7 @@ blocks:
         videoCoverImage: ''
         videoId: ''
     - item: Donation Widget (DonorBox)
-      itemType: donation-widget
+      itemType: donation
       text:
         content: ''
         buttons: []

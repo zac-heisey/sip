@@ -6,20 +6,23 @@
       "url": "",
       "submenu": [
         {
-          "name": "Mission & Values",
-          "url": "/mission-values/"
+          "name": "Mission & Vision",
+          "url": "/mission-vision/"
         },
         {
           "name": "Recent News",
-          "url": "/news"
+          "url": "/news/"
         }
       ]
     },
     {
       "name": "Programs",
-      "url": "/programs/",
+      "url": "",
       "submenu": [
-
+        {
+          "name": "All Programs",
+          "url": "/programs/"
+        }
       ]
     },
     {
@@ -36,7 +39,7 @@
         },
         {
           "name": "Contact",
-          "url": "/contact"
+          "url": "/contact/"
         }
       ]
     }
