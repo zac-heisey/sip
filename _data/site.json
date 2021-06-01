@@ -1,9 +1,9 @@
 {
 
   "title": "Secure Information Project",
-  "url": "tbd.com",
-  "description": "tbd",
-  "logo": "tbd.svg",
+  "url": "https://secureinformationproject.org/",
+  "description": "Secure Information Project (SIP) exists to document and information security for vulnerable families, new immigrants, refugees, and asylum-seekers in the United States.",
+  "logo": "/assets/images/sip-logo-tr.png",
   "cloudinary": "https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto"
 
 }
