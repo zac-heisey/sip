@@ -28,11 +28,11 @@
       "submenu": [
         {
           "name": "Donate",
-          "url": "/#"
+          "url": "/donate/"
         },
         {
           "name": "Volunteer",
-          "url": "/#"
+          "url": "/volunteer/"
         },
         {
           "name": "Contact",
