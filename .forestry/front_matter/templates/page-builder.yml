@@ -29,7 +29,6 @@ fields:
   - rich-text
   - carousel
   - parallax-callout
-  - quick-cta
   config:
     min: 
     max: 
