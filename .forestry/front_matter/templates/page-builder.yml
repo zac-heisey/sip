@@ -29,6 +29,7 @@ fields:
   - rich-text
   - carousel
   - parallax-callout
+  - contact-form
   config:
     min: 
     max: 
