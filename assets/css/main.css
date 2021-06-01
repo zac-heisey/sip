@@ -1454,5 +1454,22 @@ section.posts-list .post-pagination {
 
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
+
+}
+
+/* Individual blog posts */
+
+main[data-page*="/posts/"] section.hero .container.image img {
+
+  min-height: auto;
+
+}
+
+p.post-date {
+
+  color: var(--blue);
+  font-size: 14px;
+  margin: 0;
 
 }

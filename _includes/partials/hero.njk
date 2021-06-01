@@ -13,7 +13,14 @@
       <!-- Hero block text -->
       <div class="container text">
         <h2>{{ block.heading }}</h2>
-        <h3>{{ block.subHeading }}</h3>
+
+        {% if block.subHeading %}
+          <h3>{{ block.subHeading }}</h3>
+        {% endif %}
+
+        {% if '/posts/' in page.url %}
+          <p class="post-date">{{ page.date.toDateString() }}</p>
+        {% endif %}
 
         <!-- Hero block buttons (if any) -->
         {% if block.buttons.length > 0 %}
