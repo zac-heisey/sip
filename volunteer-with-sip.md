@@ -62,6 +62,8 @@ blocks:
   content: "<p>If you're interested in any of the roles above, or you're interested
     in helping SIP in some other capacity, please complete the quick form below and
     we will reach out ASAP.</p>"
+- template: contact-form
+  type: contact-form
 
 ---
 ## Volunteer with Secure Information Project
