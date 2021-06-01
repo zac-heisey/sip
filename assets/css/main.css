@@ -671,7 +671,7 @@ section {
 
 section + section {
 
-  margin: 2rem auto;
+  margin: 3rem auto;
 
 }
 
@@ -689,7 +689,7 @@ section + section {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 1.5rem;
-  grid-row-gap: 2rem;
+  grid-row-gap: 3rem;
   grid-auto-flow: dense;
   height: auto;
 
@@ -697,7 +697,7 @@ section + section {
 
 .lock .row + .row {
 
-  margin-top: 2rem;
+  margin-top: 3rem;
 
 }
 
