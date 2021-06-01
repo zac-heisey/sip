@@ -6,24 +6,25 @@
       "url": "",
       "submenu": [
         {
-          "name": "News",
+          "name": "Mission & Values",
+          "url": "/mission-values/"
+        },
+        {
+          "name": "Recent News",
           "url": "/news"
         }
       ]
     },
     {
       "name": "Programs",
-      "url": "#",
+      "url": "/programs/",
       "submenu": [
-        {
-          "name": "Program 1",
-          "url": "/programs/program-1"
-        }
+
       ]
     },
     {
       "name": "Get Involved",
-      "url": "#",
+      "url": "",
       "submenu": [
         {
           "name": "Donate",
