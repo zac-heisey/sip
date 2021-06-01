@@ -995,30 +995,30 @@ section.grid .container.donation iframe {
   }
 
   section.grid .row.item-2 > .container.image,
-  section.grid .row.item-2 > .container.donation {
-
-    grid-column: 8 / span 5;
-
-  }
-
-  section.grid .row.item-2 > .container.image:first-child,
-  section.grid .row.item-2 > .container.donation:first-child {
-
-    grid-column: span 5;
-
-  }
-
-  section.grid .row.item-2 > .container.text,
   section.grid .row.item-2 > .container.video {
 
     grid-column: 7 / span 6;
 
   }
 
-  section.grid .row.item-2 > .container.text:first-child,
+  section.grid .row.item-2 > .container.image:first-child,
   section.grid .row.item-2 > .container.video:first-child {
 
     grid-column: span 6;
+
+  }
+
+  section.grid .row.item-2 > .container.text,
+  section.grid .row.item-2 > .container.donation {
+
+    grid-column: 8 / span 5;
+
+  }
+
+  section.grid .row.item-2 > .container.text:first-child,
+  section.grid .row.item-2 > .container.donation:first-child {
+
+    grid-column: span 5;
 
   }
 
