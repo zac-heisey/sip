@@ -549,6 +549,15 @@ header#menu nav button[aria-expanded="true"] + ul {
 
 }
 
+/* Main */
+
+main {
+
+  flex: 1 0 auto;
+  margin-top: 85px;
+
+}
+
 /* Footer */
 
 footer {
@@ -556,11 +565,10 @@ footer {
   background-color: var(--light-gray);
   width: 100%;
   height: auto;
-  margin: -2rem auto 0 auto;
 
 }
 
-footer .lock {
+footer > .lock {
 
   padding: 2rem 0;
 
@@ -607,7 +615,7 @@ footer address p {
 
 @media (min-width: 768px) {
 
-  footer .lock {
+  footer > .lock {
 
     display: flex;
     justify-content: space-between;
@@ -617,12 +625,37 @@ footer address p {
 
 }
 
-/* Main */
+/* Quick CTA section (in footer) */
 
-main {
+section.quick-cta {
 
-  flex: 1 0 auto;
-  margin-top: 85px;
+  color: var(--white);
+  background-color: var(--blue);
+
+}
+
+section.quick-cta .lock {
+
+  text-align: center;
+  padding: 2rem 0;
+
+}
+
+section.quick-cta form {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+
+}
+
+@media (min-width: 576px) {
+
+  section.quick-cta form {
+
+    justify-content: center;
+
+  }
 
 }
 
@@ -1343,46 +1376,6 @@ section.parallax-callout .text-overlay.left {
 section.parallax-callout .text-overlay.right {
 
   margin: 3rem 0 3rem auto;
-
-}
-
-/* Quick CTA block */
-
-section.quick-cta .lock {
-
-  text-align: center;
-  padding: 2rem 0;
-
-}
-
-section.quick-cta.yellow {
-
-  background-color: var(--yellow);
-
-}
-
-section.quick-cta.blue {
-
-  color: var(--white);
-  background-color: var(--blue);
-
-}
-
-section.quick-cta form {
-
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
-
-}
-
-@media (min-width: 576px) {
-
-  section.quick-cta form {
-
-    justify-content: center;
-
-  }
 
 }
 

@@ -16,14 +16,7 @@ blocks:
   type: body-content
 - template: contact-form
   type: contact-form
-- template: quick-cta
-  type: quick-cta
-  backgroundColor: blue
-  headline: Sign Up for News, Updates, and More from SIP
-  buttons:
-  - buttonText: Get SIP Updates
-    color: yellow
-    url: ''
+
 ---
 
 ## Contact Secure Information Project

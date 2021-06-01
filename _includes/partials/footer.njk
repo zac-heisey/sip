@@ -1,5 +1,28 @@
 <footer>
 
+  <!-- Quick CTA section -->
+  <section class="quick-cta">
+
+    <div class="lock">
+
+      <h2>{{ footer.quickCta.headline }}</h2>
+
+      <form name="Quick CTA" action="/thank-you/" method="post" data-netlify="true">
+
+        <input type="text" name="Name" placeholder="Full Name" required>
+
+        <input type="email" name="Email" placeholder="Email Address" required>
+
+        <div class="buttons">
+          <button class="btn yellow">{{ footer.quickCta.buttonText }}</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+
   <div class="lock">
 
     <div class="column">
@@ -13,10 +36,11 @@
     <div class="column">
       <h3>Secure Information Project</h3>
       <address>
-        <p>123 First Street</p>
-        <p>Suite ABC</p>
-        <p>Philadelphia, PA 19143</p>
-        <a href="tel:+1234567890">(123) 456-7890</a>
+        <p>{{ footer.contactInfo.street1 }}</p>
+        <p>{{ footer.contactInfo.street2 }}</p>
+        <p>{{ footer.contactInfo.cityStateZip }}</p>
+        <a href="tel:+1{{ footer.contactInfo.phoneNumber | replace(" ", "") |
+      replace("(", "") | replace(")", "") | replace("-", "") }}">{{ footer.contactInfo.phoneNumber }}</a>
       </address>
     </div>
 
