@@ -10,15 +10,32 @@
       <div class="wrapper">
 
         <!-- Standard form fields -->
-        <div class="column">
-          <label>First Name
-            <input id="first-name" name='first name' placeholder='First Name' type='text' required>
-          </label>
+        <div class="label-input">
+          <label for="first-name">First Name</label>
+          <input type='text' id="first-name" name='first name' placeholder='First Name' required>
+        </div>
 
-          <label>Phone Number
-            <input name='phone' placeholder='Phone Number' type='tel' required>
-          </label>
+        <div class="label-input">
+          <label for="last-name">Last Name</label>
+          <input type='text' id="last-name" name='last name' placeholder='Last Name' required>
+        </div>
 
+        <div class="label-input">
+          <label for="phone-number">Phone Number</label>
+          <input type='tel' id="phone-number" name='phone' placeholder='(123) 456-7890' required>
+        </div>
+
+        <div class="label-input">
+          <label for="email-address">Email Address</label>
+          <input type='email' id="email-address" name='email' placeholder='email@address.com' required>
+        </div>
+
+        <div class="label-input">
+          <label for="message">Anything else to add?</label>
+          <textarea id="message" name='message' rows="4"></textarea>
+        </div>
+
+        <div class="label-input">
           <p class="label">I'm interested in...</p>
           <div class="checkboxes">
             <label>
@@ -43,19 +60,7 @@
           </div>
         </div>
 
-        <div class="column">
-          <label>Last Name
-            <input id="last-name" name='last name' placeholder='Last Name' type='text' required>
-          </label>
-
-          <label>Email Address
-            <input name='email' placeholder='Email Address' type='email' required>
-          </label>
-
-          <label>Anything else to add?
-            <textarea name='message'></textarea>
-          </label>
-
+        <div class="label-input">
           <!-- Netlify reCAPTCHA 2 -->
           <div data-netlify-recaptcha="true"></div>
 

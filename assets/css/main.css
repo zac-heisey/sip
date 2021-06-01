@@ -1388,56 +1388,48 @@ section.quick-cta form {
 
 /* Contact Form block */
 
-section.contact-form form label,
-section.contact-form form .label {
+section.contact-form .wrapper .label-input {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0;
+
+}
+
+section.contact-form .wrapper label,
+section.contact-form .wrapper .label {
 
   display: inline;
   margin: 0.25rem;
 
 }
 
-section.contact-form form input,
-section.contact-form form select,
-section.contact-form form textarea {
-
-  width: 100%;
-  margin-bottom: 1.5rem;
-
-}
-
-section.contact-form form textarea {
-
-  min-height: 140px;
-
-}
-
-section.contact-form form .checkboxes {
+section.contact-form .wrapper .checkboxes {
 
   display: flex;
   flex-direction: column;
 
 }
 
-section.contact-form form input[type="checkbox"] {
+section.contact-form .wrapper input[type="checkbox"] {
 
-  display: inline-block;
-  width: auto;
-  margin: 0.25rem;
+  display: inline;
 
 }
 
 @media (min-width: 576px) {
 
-  section.contact-form form .wrapper {
+  section.contact-form .wrapper {
 
     display: flex;
+    flex-wrap: wrap;
 
   }
 
-  section.contact-form form .wrapper .column {
+  section.contact-form .wrapper .label-input {
 
-    width: 50%;
-    padding: 1rem;
+    width: calc(50% - 0.5rem);
 
   }
 
