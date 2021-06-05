@@ -17,5 +17,3 @@ blocks:
     buttonText: It's a button
 
 ---
-
-![](https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto/v1622895995/sip/sip_long-tr_d2n6yd.png)
