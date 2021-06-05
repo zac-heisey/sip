@@ -7,13 +7,15 @@ blocks:
 - template: hero
   type: hero
   heading: Test Blog Post 8
-  subHeading:
+  subHeading: 
   image:
-    source: /sip/placeholder-1.jpg
+    source: "/sip/placeholder-1.jpg"
     altText: This is some sample alt text for the image
   buttons: []
 - template: body-content
   type: body-content
----
 
+---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+![](https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto/v1622895995/sip/sip_long-tr_d2n6yd.png)

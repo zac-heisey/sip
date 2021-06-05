@@ -40,9 +40,9 @@ fields:
         - donation
         source:
           type: simple
-          section:
-          file:
-          path:
+          section: 
+          file: 
+          path: 
       label: Item Type
       description: Choose the media type for your grid item (text, image, video, or
         donation widget)
@@ -118,7 +118,7 @@ fields:
       labelField: item
     label: Grid Items
   config:
-    min:
-    max:
+    min: 
+    max: 
     labelField: row
   label: Grid Rows

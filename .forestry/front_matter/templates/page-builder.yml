@@ -36,8 +36,5 @@ fields:
   description: Select from the list of block types to build your page.
 pages:
 - components.md
-- donate-to-sip.md
 - index.md
 - mission-vision.md
-- programs-at-sip.md
-- volunteer-with-sip.md
