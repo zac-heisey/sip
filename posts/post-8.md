@@ -1,21 +1,21 @@
 ---
 layout: layouts/blocks.njk
-title: Test Blog Post 8 - Most Recent Posts!
-description: This page is a test blog post
+title: Securing Info Since 2022
+description: Not your granddaughter's nonprofit
 tags: posts
 blocks:
 - template: hero
   type: hero
-  heading: Test Blog Post 8
-  subHeading: 
+  heading: SIP 4eva
+  subHeading: 4eva eva?
   image:
-    source: "/sip/placeholder-1.jpg"
-    altText: This is some sample alt text for the image
-  buttons: []
-- template: body-content
-  type: body-content
+    source: "/v1622895995/sip/sip-logo-tr_pkj1at.png"
+    altText: SIP logo
+  buttons:
+  - color: blue
+    url: www.secureinformationproject.org
+    buttonText: It's a button
 
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ![](https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto/v1622895995/sip/sip_long-tr_d2n6yd.png)
