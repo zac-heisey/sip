@@ -61,10 +61,12 @@ blocks:
 ## Our Vision
 
 **_For clients:_**  
-Vulnerable populations are often subject to living in unsatisfactory conditions. For many reasons, important documents and valuable possessions/heirlooms can be easily lost, destroyed, or stolen. This project seeks to protect the people who are just getting on their feet in the city - or the country - from fraud, theft, violence, or intimidation because they did not understand the value of their documentation and information. Services will be provided at no cost for eligible clients to ensure the lowest possible barrier to inclusion.  
-  
+Vulnerable populations are often subject to living in unsatisfactory conditions. For many reasons, important documents and valuable possessions/heirlooms can be easily lost, destroyed, or stolen. This project seeks to protect the people who are just getting on their feet in the city - or the country - from fraud, theft, violence, or intimidation because they did not understand the value of their documentation and information. Services will be provided at no cost for eligible clients to ensure the lowest possible barrier to inclusion.
+
 **_For partners:_**  
-It is a goal of this project to acquire one or more corporate partners that provide digital information security products to consumers. Once a partner in this project, the corporate partner would provide their services to clients of the SIP at no cost while the clients are income eligible; once clients become more financially self-sufficient, they can choose to upgrade their access to a paid product provided by the corporate partner. This creates a pipeline of potential customers for the partner, but also provides the opportunity for the SIP to educate people on the cost and value of important services while helping them plan for their future.  
-  
+It is a goal of this project to acquire one or more corporate partners that provide digital information security products to consumers. Once a partner in this project, the corporate partner would provide their services to clients of the SIP at no cost while the clients are income eligible; once clients become more financially self-sufficient, they can choose to upgrade their access to a paid product provided by the corporate partner. This creates a pipeline of potential customers for the partner, but also provides the opportunity for the SIP to educate people on the cost and value of important services while helping them plan for their future.
+
 **_For society:_**  
 We believe in these words spoken by Mahatma Gandhi: “The true measure of any society can be found in how it treats its most vulnerable members.” Ergo, A society cannot be truly secure until it secures its most vulnerable people. We believe that by supporting and securing low-income and new Americans, we can help build a more robust working class where families are self-sufficient and rely less on welfare programs to live happy, healthy, and productive lives.
+
+![](https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto/v1622895995/sip/sip-logo-tr_pkj1at.png)
