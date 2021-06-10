@@ -1,6 +1,6 @@
 ---
 layout: layouts/blocks.njk
-title: Welcome to SIP | Serving Asylum Seekers and Refugees
+title: 'Welcome to '
 description: Secure Information Project (SIP) exists to document and information security
   for vulnerable families, new immigrants, refugees, and asylum-seekers in the United
   States.
@@ -20,7 +20,12 @@ blocks:
 - template: rich-text
   type: rich-text
   backgroundColor: none
-  content: "<h1>Welcome to the Secure Information Project</h1><p>Secure Information Project (SIP) exists to document and information security for vulnerable families, new immigrants, refugees, and asylum-seekers in the United States<br><br>Gentrify lumbersexual direct trade everyday carry pabst kogi. Schlitz letterpress 3 wolf moon, mixtape vegan everyday carry retro. Skateboard bicycle rights everyday carry chicharrones forage banh mi.</p>"
+  content: "<h1>Welcome to the Secure Information Project</h1><p>Secure Information
+    Project (SIP) exists to document and information security for vulnerable families,
+    new immigrants, refugees, and asylum-seekers in the United States<br><br>Gentrify
+    lumbersexual direct trade everyday carry pabst kogi. Schlitz letterpress 3 wolf
+    moon, mixtape vegan everyday carry retro. Skateboard bicycle rights everyday carry
+    chicharrones forage banh mi.</p>"
 - template: grid
   type: grid
   gridRows:
