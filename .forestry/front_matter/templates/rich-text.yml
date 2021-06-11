@@ -1,6 +1,6 @@
 ---
 label: Rich Text
-hide_body: false
+hide_body: true
 fields:
 - name: type
   type: text
