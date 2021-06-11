@@ -12,7 +12,7 @@
         <div class="container text">
           <h2>{{ allPosts[0].data.title }}</h2>
           <p class="post-date">{{ allPosts[0].date.toDateString() }}</p>
-          {{ allPosts[0].templateContent | truncate(250) | safe }}
+          <p>{{ allPosts[0].data.description | truncate(250) | safe }}</p>
 
           <div class="buttons">
             <a href="{{ allPosts[0].url }}" class="btn blue">Read Full Article</a>
@@ -37,7 +37,7 @@
         {{ macro.imageSizes(post.data.blocks[0].image.source, post.data.blocks[0].image.altText) }}
         <h3>{{ post.data.title }}</h3>
         <p class="post-date">{{ post.date.toDateString() }}</p>
-        {{ post.templateContent | truncate(125) | safe }}
+        <p>{{ post.data.description | truncate(125) | safe }}</p>
         <p><a href="{{ post.url }}">Read Full Article</a></p>
       </div>
 

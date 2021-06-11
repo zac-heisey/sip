@@ -1024,10 +1024,9 @@ section.grid .container.donation iframe {
 
 }
 
-/* Rich text / Body content block */
+/* Rich text */
 
-section.rich-text .lock,
-section.body-content .lock {
+section.rich-text .lock {
 
   overflow: auto;
 

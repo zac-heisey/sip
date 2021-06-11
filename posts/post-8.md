@@ -15,8 +15,6 @@ blocks:
   - color: blue
     url: www.secureinformationproject.org
     buttonText: It's a button
-- template: body-content
-  type: body-content
 - template: rich-text
   type: rich-text
   backgroundColor: none
@@ -30,6 +28,3 @@ blocks:
       source: "/v1622895995/sip/sip-logo-tr_pkj1at.png"
 
 ---
-asasdfa
-
-asdfasdf

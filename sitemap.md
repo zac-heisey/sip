@@ -1,10 +1,7 @@
 ---
-layout: layouts/blocks.njk
+layout: layouts/base.njk
 title: SIP Sitemap
 description:
-blocks:
-- template: body-content
-  type: body-content
 eleventyExcludeFromCollections: true
 ---
 
@@ -25,7 +22,7 @@ eleventyExcludeFromCollections: true
 
 ## Posts
 
-{% for post in collections.posts %}
+{% for post in collections.posts | reverse %}
 
   [{{ post.data.title }}]({{ post.url }})
 
