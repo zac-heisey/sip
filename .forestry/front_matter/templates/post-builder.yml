@@ -24,14 +24,15 @@ fields:
   label: Page Blocks
   template_types:
   - hero
+  - body-content
   - grid
   - rich-text
   - carousel
   - parallax-callout
   - contact-form
   config:
-    min:
-    max:
+    min: 
+    max: 
   description: Select from the list of block types to build your page.
 pages:
 - components.md

@@ -12,10 +12,9 @@ blocks:
     source: "/v1620418548/sip/placeholder-3.jpg"
     altText: Family at the beach
   buttons: []
-- template: body-content
-  type: body-content
+- template: rich-text
+  type: rich-text
+  backgroundColor: none
+  content: "<h2>SIP Programs and Services</h2><p>More info to come!</p>"
 
 ---
-## SIP Programs and Services
-
-More info to come!

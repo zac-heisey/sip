@@ -13,8 +13,10 @@ blocks:
     source: "/v1620418548/sip/placeholder-4.jpg"
     altText: Children walking through a refugee camp
   buttons: []
-- template: body-content
-  type: body-content
+- template: rich-text
+  type: rich-text
+  backgroundColor: none
+  content: "<h2>Volunteer With Secure Information Project</h2><p>SIP volunteers help with community outreach, research, program implementation, data entry and analysis, and more.</p><p>Here are a few of the roles and responsibilities that SIP looking for help with:</p>"
 - template: grid
   type: grid
   gridRows:
@@ -66,8 +68,3 @@ blocks:
   type: contact-form
 
 ---
-## Volunteer with Secure Information Project
-
-SIP volunteers help with community outreach, research, program implementation, data entry and analysis, and more.
-
-Here are a few of the roles and responsibilities that SIP looking for help with:
