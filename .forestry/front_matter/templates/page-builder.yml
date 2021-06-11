@@ -1,6 +1,6 @@
 ---
 label: Page Builder
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: layout
@@ -30,8 +30,8 @@ fields:
   - parallax-callout
   - contact-form
   config:
-    min:
-    max:
+    min: 
+    max: 
   description: Select from the list of block types to build your page.
 pages:
 - components.md
