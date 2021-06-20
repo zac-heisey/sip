@@ -1,9 +1,8 @@
 ---
 layout: layouts/blocks.njk
 title: Secure Information Project
-description: Secure Information Project (SIP) exists to document and information security
-  for vulnerable families, new immigrants, refugees, and asylum-seekers in the United
-  States.
+description: Secure Information Project seeks to help protect the data and information
+  of vulnerable immigrants to the United States.
 blocks:
 - template: hero
   type: hero
