@@ -1,15 +1,13 @@
 {
-
   "title": "Footer Data",
   "quickCta": {
-    "headline": "Sign Up for News, Updates, and More from SIP",
-    "buttonText": "Get SIP Updates"
+    "headline": "Sign Up for News, Updates, and More",
+    "buttonText": "Get Updates"
   },
   "contactInfo": {
-    "street1": "123 First Street",
-    "street2": "Suite ABC",
-    "cityStateZip": "Philadelphia, PA 19143",
-    "phoneNumber": "(123) 456-7890"
+    "street1": "PO Box 2549",
+    "street2": "",
+    "cityStateZip": "Philadelphia, PA 19147",
+    "phoneNumber": "(215) 253-8642"
   }
-
 }
