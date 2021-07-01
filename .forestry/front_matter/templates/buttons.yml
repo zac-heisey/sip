@@ -8,7 +8,7 @@ fields:
   - name: buttonText
     type: text
     config:
-      required: false
+      required: true
     label: Button Text
     description: Text for your button.
   - name: color
@@ -30,7 +30,7 @@ fields:
   - name: url
     type: text
     config:
-      required: false
+      required: true
     description: The URL for your button. This can be either an internal or external
       URL.
     label: URL
