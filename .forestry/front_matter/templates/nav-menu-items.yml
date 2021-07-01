@@ -10,23 +10,27 @@ fields:
     name: name
     label: Name
     description: Add a name for your nav menu item.
+    config:
+      required: true
   - type: text
     name: url
     label: URL
     description: Enter the relative URL for your nav menu item.
+    config:
+      required: true
   - name: submenu
     type: field_group_list
     fields:
     - name: name
       type: text
       config:
-        required: false
+        required: true
       label: Name
       description: Add a name for your submenu item.
     - name: url
       type: text
       config:
-        required: false
+        required: true
       label: URL
       description: Enter the relative URL for your submenu item.
     config:
