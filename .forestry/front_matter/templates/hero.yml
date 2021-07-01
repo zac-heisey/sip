@@ -12,7 +12,7 @@ fields:
 - name: heading
   type: text
   config:
-    required: false
+    required: true
   label: Heading
   description: Main heading of your hero block
 - name: subHeading
@@ -34,7 +34,7 @@ fields:
   - name: altText
     type: text
     config:
-      required: false
+      required: true
     label: Alt Text
     description: Provide some alt text that describes your image to users with accessibility
       issues.
