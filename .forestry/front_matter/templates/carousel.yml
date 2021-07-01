@@ -15,7 +15,7 @@ fields:
   - name: slideTitle
     type: text
     config:
-      required: false
+      required: true
     label: Slide Title
     description: A title for your slide for reference.
   - name: text
@@ -42,13 +42,13 @@ fields:
       type: textarea
       default: ''
       config:
-        required: false
+        required: true
         wysiwyg: true
         schema:
           format: html-blocks
         max: 300
       label: Content
-      description: Add content for your slide.
+      description: Add content for your slide (keep this around 300 words maximum).
     - name: buttons
       type: include
       config: {}
@@ -69,7 +69,7 @@ fields:
     - name: altText
       type: text
       config:
-        required: false
+        required: true
       label: Alt Text
       description: Provide some alt text that describes your image to users with accessibility
         issues.
