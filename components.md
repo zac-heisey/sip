@@ -19,27 +19,18 @@ blocks:
   - buttonText: Get Involved
     color: white
     url: "#"
+- template: rich-text
+  type: rich-text
+  content: |-
+    <h1>Welcome to the Secure Information Project</h1><p>Secure Information
+    Project (SIP) exists to document and information security for vulnerable
+    families, new immigrants, refugees, and asylum-seekers in the United States</p><p>We believe in these words spoken by Mahatma Gandhi: “The true measure of any society can be found in how it treats its most vulnerable members.” Ergo, A society cannot be truly secure until it secures its most vulnerable people.</p><p>By supporting and securing low-income and new Americans, we can help build a more robust working class where families are self-sufficient and rely less on welfare programs to live happy, healthy, and productive lives.</p>
+  backgroundColor: none
 - template: grid
   type: grid
   gridRows:
-  - row: Text + Image
+  - row: Image + Donation Widget
     gridItems:
-    - item: Text
-      itemType: text
-      text:
-        content: "<h1>Welcome to the Secure Information Project</h1><p>Secure Information
-          Project (SIP) exists to document and information security for vulnerable
-          families, new immigrants, refugees, and asylum-seekers in the United States<br><br>Gentrify
-          lumbersexual direct trade everyday carry pabst kogi. Schlitz letterpress
-          3 wolf moon, mixtape vegan everyday carry retro. Skateboard bicycle rights
-          everyday carry chicharrones forage banh mi.</p>"
-        buttons: []
-      image:
-        source: ''
-        altText: ''
-      video:
-        videoCoverImage: ''
-        videoId: ''
     - item: Image
       itemType: image
       text:
@@ -51,19 +42,6 @@ blocks:
       video:
         videoCoverImage: ''
         videoId: ''
-  - row: Video + Donation Widget
-    gridItems:
-    - item: Video
-      itemType: video
-      text:
-        content: ''
-        buttons: []
-      image:
-        source: ''
-        altText: ''
-      video:
-        videoCoverImage: ''
-        videoId: 15VU_mbcrB0
     - item: Donation Widget
       itemType: donation
       text:
@@ -77,12 +55,24 @@ blocks:
         videoId: ''
 - template: rich-text
   type: rich-text
-  content: |-
-    <h1>Heading 1 - Rich Text Block</h1><p>Pop-up hexagon edison bulb chicharrones yuccie fam. Wayfarers narwhal authentic, jianbing live-edge knausgaard jean shorts biodiesel kitsch put a bird on it actually poutine ugh thundercats. Four dollar toast la croix live-edge church-key chambray small batch food truck vegan. Ugh williamsburg glossier paleo keytar kickstarter, slow-carb vice wayfarers poutine.</p><p><img src="https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto/v1620418548/sip/placeholder-2.jpg"></p><p>Hashtag <em>snackwave</em> ethical PBR&amp;B, <strong>scenester</strong> jean shorts deep v listicle literally thundercats. Palo santo next level twee copper mug vice. <a href="#" title="" target="_blank">Occupy ennui whatever</a> literally pitchfork. Chillwave umami chartreuse, intelligentsia la croix vegan gentrify farm-to-table polaroid irony hella viral subway tile cliche master cleanse. Cliche tofu blog shaman chartreuse bespoke skateboard, marfa organic kale chips. Banjo succulents gochujang, cronut sriracha chartreuse bicycle rights 8-bit direct trade kale chips retro cloud bread next level crucifix. Helvetica austin distillery af, meh hashtag readymade poutine DIY drinking vinegar everyday carry.</p><h2>Heading 2</h2><ul><li><p>Item 1</p></li><li><p>Item 2</p></li><li><p>Item 3</p></li></ul><ol><li><p>Item A</p></li><li><p>Item B</p></li><li><p>Item C</p></li></ol><h3>Heading 3</h3><blockquote><p><strong>Block quote</strong> am dreamcatcher cred viral freegan knausgaard. Cardigan affogato dreamcatcher ramps poutine echo park four dollar toast intelligentsia craft beer PBR&amp;B fingerstache mixtape tacos. Taxidermy af gluten-free pabst farm-to-table truffaut yuccie. DIY lomo single-origin coffee bushwick disrupt, etsy vape schlitz.</p></blockquote><p></p><pre><code>Code block lorem ipsum code...
-    stuff...
-    things...
-    cosas...</code></pre>
+  backgroundColor: yellow
+  content: <h2>SIP Helps Vulnerable Populations in Philadelphia and Beyond Secure
+    and Protect Their Most Valuable Assets</h2><p>Vulnerable populations are often
+    subject to living in unsatisfactory conditions. For many reasons, critical documents,
+    valuable possessions, and family heirlooms can be easily lost, destroyed, or stolen.
+    SIP seeks to protect people who are just getting on their feet in the city - or
+    the country - from fraud, theft, violence, or intimidation by helping them understand
+    the value of their documentation and secure their personal information. Our programs
+    and services are provided at no cost to ensure the lowest possible barrier to
+    inclusion.</p><p><a href="/programs/" title="View Our Programs" target="_blank">View
+    Our Programs</a></p>
+- template: rich-text
+  type: rich-text
   backgroundColor: none
+  content: "<h2>Making a Difference, One Family at a Time</h2><p>SIP is dedicated
+    to making a measurable impact in the lives of vulnerable populations through a
+    variety of programs and initiatives. Below are just a few of the ways our work
+    is making a difference.</p>"
 - template: carousel
   type: carousel
   slide:
