@@ -54,7 +54,7 @@ fields:
         type: textarea
         default: ''
         config:
-          required: true
+          required: false
           wysiwyg: true
           schema:
             format: html-blocks
@@ -83,7 +83,7 @@ fields:
       - name: altText
         type: text
         config:
-          required: true
+          required: false
         label: Alt Text
         description: Provide some alt text that describes your image to users with
           accessibility issues.
@@ -104,7 +104,7 @@ fields:
       - name: videoId
         type: text
         config:
-          required: true
+          required: false
         label: Video ID
         description: The ID of the YouTube video to be used (e.g. youtube.com/watch?v=<strong><em>{{video
           id is here}})</em></strong>
