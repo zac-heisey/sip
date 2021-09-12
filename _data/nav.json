@@ -3,7 +3,7 @@
   "navItems": [
     {
       "name": "About",
-      "url": "",
+      "url": "/about",
       "submenu": [
         {
           "name": "Mission & Vision",
@@ -17,7 +17,7 @@
     },
     {
       "name": "Programs",
-      "url": "",
+      "url": "/programs",
       "submenu": [
         {
           "name": "All Programs",
@@ -27,7 +27,7 @@
     },
     {
       "name": "Get Involved",
-      "url": "",
+      "url": "getinvolved",
       "submenu": [
         {
           "name": "Donate",
