@@ -1,9 +1,8 @@
 ---
 layout: layouts/blocks.njk
 title: Volunteer with SIP
-description: Secure Information Projects welcomes volunteers from all backgrounds,
-  skillsets, languages, and fields. Reach out to learn more about volunteering with
-  SIP today.
+description: Secure Information Project needs talented, solutions-focused people to
+  help design and build systems to meet today's complex needs.
 blocks:
 - template: hero
   type: hero
@@ -16,7 +15,7 @@ blocks:
 - template: rich-text
   type: rich-text
   backgroundColor: none
-  content: "<h2>Volunteer With Secure Information Project</h2><p>SIP volunteers help with community outreach, research, program implementation, data entry and analysis, and more.</p><p>Here are a few of the roles and responsibilities that SIP looking for help with:</p>"
+  content: "<h2>Volunteer With Secure Information Project</h2>"
 - template: grid
   type: grid
   gridRows:
@@ -25,8 +24,9 @@ blocks:
     - item: Role / Title 1
       itemType: text
       text:
-        content: "<h3>Role / Title 1</h3><p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
-          forage four dollar toast retro drinking vinegar tilde 8-bit distillery.</p>"
+        content: "<h3>Role / Title 1</h3><p>Cardigan franzen prism hoodie. Yr direct
+          trade banjo, bushwick forage four dollar toast retro drinking vinegar tilde
+          8-bit distillery.</p>"
         buttons: []
       image:
         source: ''
@@ -37,8 +37,9 @@ blocks:
     - item: Role / Title 2
       itemType: text
       text:
-        content: "<h3>Role / Title 2</h3><p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
-          forage four dollar toast retro drinking vinegar tilde 8-bit distillery.</p>"
+        content: "<h3>Role / Title 2</h3><p>Cardigan franzen prism hoodie. Yr direct
+          trade banjo, bushwick forage four dollar toast retro drinking vinegar tilde
+          8-bit distillery.</p>"
         buttons: []
       image:
         source: ''
@@ -49,8 +50,9 @@ blocks:
     - item: Role / Title 3
       itemType: text
       text:
-        content: "<h3>Role / Title 3</h3><p>Cardigan franzen prism hoodie. Yr direct trade banjo, bushwick
-          forage four dollar toast retro drinking vinegar tilde 8-bit distillery.</p>"
+        content: "<h3>Role / Title 3</h3><p>Cardigan franzen prism hoodie. Yr direct
+          trade banjo, bushwick forage four dollar toast retro drinking vinegar tilde
+          8-bit distillery.</p>"
         buttons: []
       image:
         source: ''
