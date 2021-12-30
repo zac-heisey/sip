@@ -20,7 +20,7 @@ blocks:
 - template: rich-text
   type: rich-text
   backgroundColor: none
-  content: "<h5>Welcome to Secure Information Project</h5>"
+  content: "<h1>Welcome to Secure Information Project</h1>"
 - template: grid
   type: grid
   gridRows:
