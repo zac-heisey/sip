@@ -6,6 +6,10 @@
       "url": "/about",
       "submenu": [
         {
+          "name": "Leadership",
+          "url": "/leadership"
+        },
+        {
           "name": "Mission & Vision",
           "url": "/mission-vision/"
         },
@@ -26,21 +30,10 @@
       ]
     },
     {
-      "name": "Get Involved",
-      "url": "getinvolved",
+      "name": "Donate",
+      "url": "/donate",
       "submenu": [
-        {
-          "name": "Donate",
-          "url": "/donate/"
-        },
-        {
-          "name": "Volunteer",
-          "url": "/volunteer/"
-        },
-        {
-          "name": "Contact",
-          "url": "/contact/"
-        }
+
       ]
     }
   ]
