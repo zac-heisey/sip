@@ -34,6 +34,7 @@ fields:
     max: 
   description: Select from the list of block types to build your page.
 pages:
+- collaboration.md
 - components.md
 - index.md
 - leadership.md
