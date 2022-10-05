@@ -2,13 +2,6 @@
   "title": "Navigation Menu Items",
   "navItems": [
     {
-      "name": "Contact",
-      "url": "/contact",
-      "submenu": [
-
-      ]
-    },
-    {
       "name": "About",
       "url": "/about",
       "submenu": [
@@ -47,6 +40,13 @@
     {
       "name": "Donate",
       "url": "/donate",
+      "submenu": [
+
+      ]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact",
       "submenu": [
 
       ]
