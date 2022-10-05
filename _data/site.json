@@ -2,6 +2,6 @@
   "title": "Secure Information Project",
   "url": "https://secureinformationproject.org",
   "description": "Secure Information Project is a start-up research, development, and collaboration-focused nonprofit focused on building and improving systems that affect the data security and personal information of vulnerable populations throughout the globe.",
-  "logo": "/assets/images/SIP_logobigblue_kwczza.png",
+  "logo": "https://res.cloudinary.com/zheisey/image/upload/v1639585602/sip/SIP_logo_blue_aerseg.png",
   "cloudinary": "https://res.cloudinary.com/zheisey/image/upload/f_auto,q_auto,dpr_auto"
 }
