@@ -1,8 +1,7 @@
 ---
 layout: layouts/blocks.njk
-title: Careers
-description: Secure Information Project is looking for talented and passionate professionals
-  interested in bringing web3 (blockchain) concepts to the nonprofit world.
+title: Collaboration
+description: ''
 blocks:
 - template: rich-text
   type: rich-text
