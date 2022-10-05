@@ -1,6 +1,6 @@
 ---
 layout: layouts/blocks.njk
-title: "/collaboration"
+title: Collaboration
 description: ''
 blocks:
 - template: rich-text
