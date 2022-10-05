@@ -24,16 +24,16 @@
       "url": "/programs",
       "submenu": [
         {
-          "name": "Collaboration",
-          "url": "/collaboration"
-        },
-        {
           "name": "Research",
           "url": "/research"
         },
         {
           "name": "Development",
           "url": "/development"
+        },
+        {
+          "name": "Collaboration",
+          "url": "/collaboration"
         }
       ]
     },
