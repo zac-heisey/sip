@@ -2,6 +2,13 @@
   "title": "Navigation Menu Items",
   "navItems": [
     {
+      "name": "Contact",
+      "url": "/contact",
+      "submenu": [
+
+      ]
+    },
+    {
       "name": "About",
       "url": "/about",
       "submenu": [
