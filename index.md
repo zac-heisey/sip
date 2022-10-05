@@ -1,9 +1,9 @@
 ---
 layout: layouts/blocks.njk
 title: Secure Information Project
-description: Secure Information Project's goal is to research and design programs
-  to help protect the data and information of vulnerable immigrants to the United
-  States.
+description: Secure Information Project is focused on building and improving systems
+  that affect the data security and personal information of vulnerable populations
+  throughout the globe.
 blocks:
 - template: hero
   type: hero
