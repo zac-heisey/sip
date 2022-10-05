@@ -3,14 +3,6 @@ layout: layouts/blocks.njk
 title: Donate to SIP
 description: Giving to SIP is quick, easy, and secure! Visit to donate online today.
 blocks:
-- template: hero
-  type: hero
-  heading: Some really inspiring words should go right here.
-  subHeading: "- Some Smart Guy or Gal"
-  image:
-    source: "/v1620418245/sip/mother-child.jpg"
-    altText: Woman holding a child
-  buttons: []
 - template: grid
   type: grid
   gridRows:
@@ -42,5 +34,12 @@ blocks:
       video:
         videoCoverImage: ''
         videoId: ''
+- template: parallax-callout
+  type: parallax-callout
+  textOverlay:
+    backgroundColor: white
+    overlayPosition: center
+    content: "<p>text about donating and where money will go</p>"
+  backgroundImage: "/v1639585602/sip/sip_fadedlock_blue_kgwcy1.png"
 
 ---

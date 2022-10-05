@@ -5,18 +5,7 @@
       "name": "About",
       "url": "/about",
       "submenu": [
-        {
-          "name": "Leadership",
-          "url": "/leadership"
-        },
-        {
-          "name": "Mission & Vision",
-          "url": "/mission-vision/"
-        },
-        {
-          "name": "Recent News",
-          "url": "/news/"
-        }
+
       ]
     },
     {
