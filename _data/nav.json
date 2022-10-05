@@ -24,6 +24,10 @@
       "url": "/programs",
       "submenu": [
         {
+          "name": "Development",
+          "url": "/development"
+        },
+        {
           "name": "Research",
           "url": "/research"
         }
