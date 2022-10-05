@@ -1,7 +1,7 @@
 ---
 layout: layouts/blocks.njk
-title: Emerging Technology Research
-description: This page is sample / placeholder for Program 1
+title: Development
+description: ''
 blocks:
 - template: hero
   type: hero
