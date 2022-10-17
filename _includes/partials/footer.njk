@@ -40,8 +40,15 @@
         <p>{{ footer.contactInfo.street1 }}</p>
         <p>{{ footer.contactInfo.street2 }}</p>
         <p>{{ footer.contactInfo.cityStateZip }}</p>
-        <a href="tel:+1{{ footer.contactInfo.phoneNumber | replace(" ", "") |
-      replace("(", "") | replace(")", "") | replace("-", "") }}">{{ footer.contactInfo.phoneNumber }}</a>
+        <!-- Check for email address -->
+        {% if footer.contactInfo.emailAddress !== "" %}
+        <p><a href="mailto:{{ footer.contactInfo.emailAddress }}">{{ footer.contactInfo.emailAddress }}</a></p>
+        {% endif %}
+        <!-- Check for phone number -->
+        {% if footer.contactInfo.phoneNumber !== "" %}
+        <p><a href="tel:+1{{ footer.contactInfo.phoneNumber | replace(" ", "") |
+        replace("(", "") | replace(")", "") | replace("-", "") }}">{{ footer.contactInfo.phoneNumber }}</a></p>
+        {% endif %}
       </address>
     </div>
 

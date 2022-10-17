@@ -8,6 +8,7 @@
     "street1": "PO Box 2549",
     "street2": "",
     "cityStateZip": "Philadelphia, PA 19147",
-    "phoneNumber": "info@secureinformationproject.org"
+    "emailAddress": "info@secureinformationproject.org",
+    "phoneNumber": ""
   }
 }
