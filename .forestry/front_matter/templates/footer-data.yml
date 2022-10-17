@@ -60,3 +60,5 @@ fields:
     name: phoneNumber
     label: phoneNumber
   description: Enter the contact information for your organization
+pages:
+- _data/footer.json
