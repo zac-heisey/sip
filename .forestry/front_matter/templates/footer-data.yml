@@ -1,0 +1,36 @@
+---
+label: Footer Data
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: quickCta
+  label: quickCta
+  fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: text
+    name: buttonText
+    label: buttonText
+- type: field_group
+  name: contactInfo
+  label: contactInfo
+  fields:
+  - type: text
+    name: street1
+    label: street1
+  - type: text
+    name: street2
+    label: street2
+  - type: text
+    name: cityStateZip
+    label: cityStateZip
+  - type: text
+    name: emailAddress
+    label: emailAddress
+  - type: text
+    name: phoneNumber
+    label: phoneNumber
