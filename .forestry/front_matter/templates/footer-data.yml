@@ -42,7 +42,7 @@ fields:
   description: Use this to gather a person's name and email information
 - type: field_group
   name: contactInfo
-  label: Contact Infor
+  label: Contact Information
   fields:
   - type: text
     name: street1
