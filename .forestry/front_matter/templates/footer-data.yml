@@ -5,20 +5,44 @@ fields:
 - type: text
   name: title
   label: Title
+  hidden: true
 - type: field_group
   name: quickCta
   label: Quick CTA
   fields:
+  - name: enabled
+    type: select
+    default: 'False'
+    config:
+      required: true
+      options:
+      - 'True'
+      - 'False'
+      source:
+        type: simple
+        section: ''
+        file: 
+        path: 
+    label: Enabled
+    description: Choose whether to enable this feature
   - type: text
     name: headline
-    label: headline
+    label: Headline
+    description: Headline for the Quick CTA
+    showOnly:
+      field: enabled
+      value: 'True'
   - type: text
     name: buttonText
-    label: buttonText
-  description: Use this to gather a person's name and email information.
+    label: Button Text
+    description: Text of the button in the Quick CTA
+    showOnly:
+      field: enabled
+      value: 'True'
+  description: Use this to gather a person's name and email information
 - type: field_group
   name: contactInfo
-  label: contactInfo
+  label: Contact Infor
   fields:
   - type: text
     name: street1
@@ -35,3 +59,4 @@ fields:
   - type: text
     name: phoneNumber
     label: phoneNumber
+  description: Enter the contact information for your organization
