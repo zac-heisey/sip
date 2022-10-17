@@ -3,6 +3,12 @@
   // IIFE wrapper start
   (function() {
 
+    //== Update Copyright Date ==//
+    let copyright = document.getElementById('date');
+    let currentYear = new Date().getFullYear();
+    copyright.innerText = currentYear;
+
+
     //== Load Fonts (prevent FOIT) ==//
 
     // https://gomakethings.com/preventing-foit-with-web-fonts-using-the-vanilla-js-fonts.load-method/
