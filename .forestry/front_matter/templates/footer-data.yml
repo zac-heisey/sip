@@ -4,10 +4,10 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: field_group
   name: quickCta
-  label: quickCta
+  label: Quick CTA
   fields:
   - type: text
     name: headline
@@ -15,6 +15,7 @@ fields:
   - type: text
     name: buttonText
     label: buttonText
+  description: Use this to gather a person's name and email information.
 - type: field_group
   name: contactInfo
   label: contactInfo
