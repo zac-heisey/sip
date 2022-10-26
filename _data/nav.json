@@ -5,7 +5,10 @@
       "name": "About",
       "url": "/about",
       "submenu": [
-
+        {
+          "name": "Test Sub-Menu Item",
+          "url": "/#"
+        }
       ]
     },
     {
